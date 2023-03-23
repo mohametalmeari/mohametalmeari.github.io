@@ -114,7 +114,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:mohametalmeari/Hello-Microverse.git
+  git clone git@github.com:mohametalmeari/Portfolio.git
 ```
 
 ### Install
