@@ -2,6 +2,7 @@
   box-sizing: border-box;
   color: #050a30;
   font-family: Arial, Helvetica, sans-serif;
+  font-family:'Poppins';
   background-color: rgb(255, 255, 255);
   text-decoration: none;
 }
@@ -14,6 +15,7 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
+  background-color: #E5E5E5;;
 }
 
 .header {
@@ -21,7 +23,8 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: white;
-  padding: 4px 16px;
+  padding: 6px 24px;
+  align-content: center;
 }
 
 .mobile_logo {
@@ -30,33 +33,57 @@ body {
   width: auto;
   height: auto;
 }
-
+.menu_icon {
+  display: flex;
+  /* outline: 3px solid rgba(255, 1, 1, 0.308); outline-offset: -3px; */
+}
 .menu_icon .material-icons {
-  color: blue;
+  color: #6070FF;
+  align-self: center;
 }
 
-.intro {
-  height: calc(100vh - 48px);
+.headline {
+  min-height: calc(100vh - 48px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 16px;
-  background: rgb(212, 242, 255);
+  padding: 60px 24px;
+  background: white;
+  border-radius: 0 0 0 60px;
 }
 
-.intro h1 {
-  font-size: xx-large;
+.headline h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172B4D;
 }
 
-.intro > * {
+.headline p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.icons a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 6px 20px 6px 0;
+}
+
+.headline > * {
   background-color: transparent;
-  margin: 8px 0;
+  margin: 6px 0;
 }
 
 .connect_link {
-  color: blue;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7F8CFF;
 }
 
-.links a {
-  margin: 0 8px;
-}
+
+
