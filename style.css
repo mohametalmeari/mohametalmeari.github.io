@@ -131,9 +131,9 @@ h2 {
 .preview {
   margin: 0 auto;
   border-radius: 8px;
-  height: auto ;
+  height: auto;
   width: 100%;
- }
+}
 
 .card h2 {
   font-weight: 700;
