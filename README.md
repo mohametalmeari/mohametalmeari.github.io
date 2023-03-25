@@ -29,7 +29,7 @@
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
+- [🙏 Acknowlednpments](#acknowlednpments)
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
@@ -48,28 +48,11 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li>HTML</li>
-  </ul>
-  <ul>
-    <li>CSS</li>
+    <li><a href="https://www.w3schools.com/html/">HTML</a></li>
+    <li><a href="https://www.w3schools.com/css/">CSS</a></li>
   </ul>
 </details>
 
-<!-- <details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details> -->
-
-<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
@@ -99,14 +82,6 @@
 
 To get a local copy up and running, follow these steps.
 
-### Prerequisites
-
-In order to run this project you need:
-
-
-```sh
- gem install rails
-```
 
 ### Setup
 
@@ -117,42 +92,10 @@ Clone this repository to your desired folder:
   git clone git@github.com:mohametalmeari/Portfolio.git
 ```
 
-### Install
-
-Install this project with:
-
-```sh
-  cd my-project
-  gem install
-```
-
 ### Usage
 
-To run the project, execute the following command:
-
-
-```sh
-  rails server
-```
-
-### Run tests
-
-To run tests, run the following command:
-
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
-
-
-### Deployment
-
-You can deploy this project using:
-
-
-```sh
-
-```
+How to open your project in the browser? 
+Double click on HTML file and the HTML file will be open in your browser.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -204,9 +147,9 @@ We invite you to share this project with others and provide a favorable review i
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
+<!-- ACKNOWLEDnpmENTS -->
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
+## 🙏 Acknowledgments <a name="acknowlednpments"></a>
 
 > Thank You Microverse!
 
@@ -229,8 +172,7 @@ I would like to thank Microverse team for helping me building to learn web devel
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
