@@ -37,6 +37,22 @@ body {
   display: flex;
 }
 
+.tech{
+  list-style: none;
+  padding-left: 0;
+  color: #6070ff;
+}
+
+.tech li{
+  float: left;
+  margin-right: 10px;
+  color: #6070ff;
+  background-color: #ebebff;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 4px 12px;
+}
+
 .menu_icon .material-icons {
   color: #6070ff;
   align-self: center;
