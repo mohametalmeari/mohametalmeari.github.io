@@ -162,21 +162,6 @@ h2 {
   margin: 20px 0 12px;
 }
 
-.prog_lang {
-  padding: 0;
-  margin: 0 0 24px;
-  list-style-type: none;
-}
-
-.prog_lang li {
-  display: inline;
-  color: #6070ff;
-  background-color: #ebebff;
-  border-radius: 4px;
-  margin: 0 8px 0 0;
-  padding: 4px 12px;
-}
-
 button {
   align-self: flex-start;
   color: #396df2;
