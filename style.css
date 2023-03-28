@@ -236,6 +236,7 @@ button:hover {
   margin-bottom: 20px;
   border: 1px solid #cfb8dc;
   outline: none;
+  width: 100%;
 }
 
 .contact textarea {
@@ -265,6 +266,7 @@ button:hover {
 .contact form {
   display: flex;
   flex-direction: column;
+  justify-content: stretch;
 }
 
 .contact h2 {
@@ -294,8 +296,4 @@ button:hover {
   background-color: #6070ff;
   color: white;
   outline: 1px solid white;
-}
-
-.contact form div {
-  text-align: left;
 }
