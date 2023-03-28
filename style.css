@@ -58,6 +58,7 @@ body {
   border-radius: 0 0 0 60px;
   background-image: url(images/header-shapes-mobile.png);
   background-repeat: no-repeat;
+  background-position: right;
 }
 
 h1,
@@ -98,14 +99,14 @@ h2 {
   margin: 6px 0;
 }
 
-.connect_link {
+#connect_link {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
 }
 
-.connect_link:hover {
+#connect_link:hover {
   text-shadow: 1px 1px 1px #616bc4c5;
 }
 
@@ -206,8 +207,13 @@ button:hover {
   border-radius: 0 60px 0 0;
 }
 
-.footer_list > li {
+.footer_list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+}
+
+.footer_list > li {
   border-bottom: 1px solid #dfe1e6;
   padding: 24px 12px;
   color: black;
@@ -225,8 +231,8 @@ button:hover {
   float: right;
 }
 
-.contact input,
-.contact textarea {
+#contact input,
+#contact textarea {
   padding: 15px 16px;
   font-size: 17px;
   font-weight: 400;
@@ -239,18 +245,18 @@ button:hover {
   width: 100%;
 }
 
-.contact textarea {
+#contact textarea {
   font-size: 15px;
   height: 170px;
   line-height: 24px;
   resize: none;
 }
 
-.contact textarea::placeholder {
+#contact textarea::placeholder {
   color: #b3bac5;
 }
 
-.contact {
+#contact {
   background-color: #6070ff;
   text-align: center;
   display: flex;
@@ -263,13 +269,13 @@ button:hover {
   background-repeat: no-repeat;
 }
 
-.contact form {
+#contact form {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
 }
 
-.contact h2 {
+#contact h2 {
   color: white;
   font-size: 40px;
   font-weight: 700;
@@ -277,7 +283,7 @@ button:hover {
   margin: 0 0 12px;
 }
 
-.contact p {
+#contact p {
   color: #ebebff;
   font-size: 20px;
   line-height: 28px;
