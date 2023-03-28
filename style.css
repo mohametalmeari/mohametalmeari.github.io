@@ -269,8 +269,7 @@ button:hover {
   background-repeat: no-repeat;
 }
 
-#contact h2 
-{
+#contact h2 {
   color: white;
   font-size: 40px;
   font-weight: 700;
@@ -278,8 +277,7 @@ button:hover {
   margin: 0 0 12px;
 }
 
-#contact p 
-{
+#contact p {
   color: #ebebff;
   font-size: 20px;
   line-height: 28px;
