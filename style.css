@@ -256,6 +256,7 @@ button:hover {
   color: #b3bac5;
 }
 
+
 #contact {
   background-color: #6070ff;
   text-align: center;
@@ -269,13 +270,9 @@ button:hover {
   background-repeat: no-repeat;
 }
 
-#contact form {
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-}
 
-#contact h2 {
+#contact h2 
+{
   color: white;
   font-size: 40px;
   font-weight: 700;
@@ -283,7 +280,9 @@ button:hover {
   margin: 0 0 12px;
 }
 
-#contact p {
+
+#contact p 
+{
   color: #ebebff;
   font-size: 20px;
   line-height: 28px;
@@ -291,15 +290,3 @@ button:hover {
   margin: 0 0 52px;
 }
 
-[type="submit"] {
-  color: #6070ff;
-  background-color: white;
-  margin: 0;
-  border: none;
-}
-
-[type="submit"]:hover {
-  background-color: #6070ff;
-  color: white;
-  outline: 1px solid white;
-}
