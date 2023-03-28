@@ -186,7 +186,7 @@ button {
   line-height: 24px;
   border: 1px solid #396df2;
   border-radius: 8px;
-  padding: 12px;
+  padding: 12px 16px;
   margin: 0 0 16px;
 }
 
@@ -223,7 +223,6 @@ button:hover {
 
 .footer_list li i {
   float: right;
-
 }
 
 .contact input,
@@ -245,6 +244,10 @@ button:hover {
   line-height: 24px;
 }
 
+.contact textarea::placeholder {
+  color: #b3bac5;
+}
+
 .contact {
   background-color: #6070ff;
   text-align: center;
@@ -257,10 +260,12 @@ button:hover {
   background-position: right;
   background-repeat: no-repeat;
 }
+
 .contact form {
   display: flex;
   flex-direction: column;
 }
+
 .contact h2 {
   color: white;
   font-size: 40px;
@@ -278,14 +283,18 @@ button:hover {
 }
 
 [type="submit"] {
- color: #6070ff;
- background-color: white;
- margin: 0;
- border: none;
+  color: #6070ff;
+  background-color: white;
+  margin: 0;
+  border: none;
 }
+
+[type="submit"]:hover {
+  background-color: #6070ff;
+  color: white;
+  outline: 1px solid white;
+}
+
 .contact form div {
   text-align: left;
 }
-
-
-
