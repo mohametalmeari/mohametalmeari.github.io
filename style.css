@@ -242,6 +242,7 @@ button:hover {
   font-size: 15px;
   height: 170px;
   line-height: 24px;
+  resize: none;
 }
 
 .contact textarea::placeholder {
