@@ -426,13 +426,6 @@ button:hover {
     transition: transform 1s;
   }
 
-  .pv1:hover,
-  .pv2:hover,
-  .pv3:hover,
-  .pv4:hover {
-    transform: scale(1.05);
-  }
-
   .pv1 {
     background-image: url("./images/SnapshootPortfolioDesktop1.png");
   }
@@ -449,6 +442,13 @@ button:hover {
   .pv4 {
     background-image: url("./images/SnapshootPortfolioDesktop4.png");
     order: 2;
+  }
+
+  .pv1:hover,
+  .pv2:hover,
+  .pv3:hover,
+  .pv4:hover {
+    transform: scale(1.05);
   }
 
   .type_and_date > * {
