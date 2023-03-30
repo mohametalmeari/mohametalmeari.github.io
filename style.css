@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   color: #050a30;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
 
@@ -338,7 +338,7 @@ button:hover {
   background-color: white;
   margin: 0;
   border: none;
-  transition: background-color 1s, color 1s ;
+  transition: background-color 1s, color 1s;
 }
 
 [type="submit"]:hover {
@@ -423,6 +423,14 @@ button:hover {
     background-size: contain;
     border-radius: 8px;
     padding: 15px 0;
+    transition: transform 1s;
+  }
+
+  .pv1:hover,
+  .pv2:hover,
+  .pv3:hover,
+  .pv4:hover {
+    transform: scale(1.05);
   }
 
   .pv1 {
