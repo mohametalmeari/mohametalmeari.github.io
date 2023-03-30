@@ -337,6 +337,7 @@ button:hover {
   background-color: white;
   margin: 0;
   border: none;
+  transition: background-color 1s, color 1s ;
 }
 
 [type="submit"]:hover {
