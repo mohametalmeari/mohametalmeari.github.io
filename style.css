@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   color: #050a30;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
 
@@ -200,6 +200,7 @@ button {
   border-radius: 8px;
   padding: 12px 16px;
   margin: 0 0 16px;
+  transition: background-color 1s, color 1s, border-color 1s;
 }
 
 button:hover {
@@ -337,6 +338,7 @@ button:hover {
   background-color: white;
   margin: 0;
   border: none;
+  transition: background-color 1s, color 1s;
 }
 
 [type="submit"]:hover {
@@ -421,6 +423,7 @@ button:hover {
     background-size: contain;
     border-radius: 8px;
     padding: 15px 0;
+    transition: transform 1s;
   }
 
   .pv1 {
@@ -439,6 +442,13 @@ button:hover {
   .pv4 {
     background-image: url("./images/SnapshootPortfolioDesktop4.png");
     order: 2;
+  }
+
+  .pv1:hover,
+  .pv2:hover,
+  .pv3:hover,
+  .pv4:hover {
+    transform: scale(1.05);
   }
 
   .type_and_date > * {
