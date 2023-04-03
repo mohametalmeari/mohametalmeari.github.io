@@ -68,7 +68,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Open the link bellow
+> Open the link bellow:
 
  - [Live Demo Link](https://mohametalmeari.github.io/)
 
