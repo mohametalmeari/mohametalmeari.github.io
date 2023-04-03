@@ -68,9 +68,9 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Not available for now.
+> Open the link bellow
 
-<!-- - [Live Demo Link](https://github.com/mohametalmeari/Portfolio) -->
+ - [Live Demo Link](https://mohametalmeari.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
