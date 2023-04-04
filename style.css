@@ -98,6 +98,10 @@ h2 {
   padding: 0;
 }
 
+.icons_text {
+  display: none;
+}
+
 .icons li {
   display: inline;
 }
@@ -331,6 +335,10 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
+}
+
+label {
+  display: none;
 }
 
 [type="submit"] {
