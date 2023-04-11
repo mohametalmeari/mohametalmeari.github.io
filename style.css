@@ -25,8 +25,8 @@ body {
   align-content: center;
 }
 
-#menu_container{
-  display: none;
+#menu_container {
+  display: block;
   position: fixed;
   top: 0;
   right: 0;
@@ -40,6 +40,7 @@ body {
   margin-top: 48px;
   margin-right: 24px;
 }
+
 .menu_list {
   list-style-type: none;
   display: flex;
@@ -53,7 +54,7 @@ body {
 }
 
 .menu_list * {
-  color: #ffffff;
+  color: #fff;
 }
 
 .mobile_logo {
@@ -393,6 +394,7 @@ button:hover {
   .close_menu {
     display: none;
   }
+
   .menu_list {
     flex-direction: row;
     padding: 0;
