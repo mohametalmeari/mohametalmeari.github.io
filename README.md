@@ -68,9 +68,10 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Open the link bellow
+> Open the link bellow:
 
  - [Live Demo Link](https://mohametalmeari.github.io/)
+ - [Outline Video](https://youtu.be/D_TjwStJm5Q)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,11 +119,10 @@ Double click on HTML file and the HTML file will be open in your browser.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> The portfolio website will be customized for different screen sizes in the future, providing a fully responsive design for optimal user experience.
+> The portfolio website will contain more animations in the future, providing a fully responsive design for optimal user experience.
 
-- [ ] **Desktop Screens**
-- [ ] **Laptop Screens**
-- [ ] **Tablet Screens**
+- [ ] **Animated Logo**
+- [ ] **Animated Buttons**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
