@@ -176,10 +176,10 @@ function createPopup(cardNo) {
       <div class="popup_btn">
         <button type="button" href="${
   projects[cardNo].live_link
-}">See Live <i class="material-icons">arrow_forward</i></button>
+}">See Live <img src="./images/live-icon.svg" alt=""></button>
         <button type="button" href="${
   projects[cardNo].source_link
-}">See source<i class="fa fa-github"></i></button>
+}">See source <img src="./images/source-icon.svg" alt=""></button>
       </div>
     </div>
   </div>

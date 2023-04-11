@@ -425,7 +425,7 @@ label {
 
 .popup_btn {
   display: flex;
-  justify-content: center;
+  justify-content: stretch;
   gap: 16px;
 }
 
