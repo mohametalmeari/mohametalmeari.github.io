@@ -156,7 +156,8 @@ h2 {
   gap: 88px;
 }
 
-.card {
+.card,
+.popup_card {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -184,18 +185,18 @@ h2 {
   margin: 0 0 20px;
 }
 
-.type_and_date :first-child {
+.info :first-child {
   color: #344563;
 }
 
-.type_and_date > * {
+.info > * {
   color: #7a869a;
   font-weight: 600px;
   font-size: 13px;
   line-height: 16px;
 }
 
-.type_and_date p {
+.info p {
   color: #344563;
   font-weight: 400;
   font-size: 15px;
@@ -351,6 +352,11 @@ button:hover {
   margin: 0 0 12px;
 }
 
+.popup_details > p {
+  text-align: justify;
+  margin: 0 0 12px;
+}
+
 #contact p {
   color: #ebebff;
   font-size: 20px;
@@ -381,6 +387,57 @@ label {
   background-color: #6070ff;
   color: white;
   outline: 1px solid white;
+}
+
+.popup_container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #c1c7d088;
+  z-index: 9999;
+  padding: 77px 5%;
+  overflow-y: scroll;
+}
+
+.popup_title {
+  margin-bottom: 20px;
+}
+
+.popup_details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+#x-popup {
+  float: right;
+}
+
+.popup_details hr {
+  margin: 20px 0;
+}
+
+.popup_details .prog_lang {
+  margin: 0;
+}
+
+.popup_btn {
+  display: flex;
+  justify-content: stretch;
+  gap: 16px;
+}
+
+.popup_btn button {
+  padding: 8px 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.popup_btn button * {
+  padding: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -450,6 +507,11 @@ label {
     padding: 24px;
   }
 
+  .popup_card {
+    flex-direction: column;
+    padding: 24px;
+  }
+
   .card_details {
     flex: 0.9;
     justify-content: stretch;
@@ -461,10 +523,7 @@ label {
     opacity: 0;
   }
 
-  .pv1,
-  .pv2,
-  .pv3,
-  .pv4 {
+  .pv {
     flex: 1;
     background-repeat: no-repeat;
     background-position: center;
@@ -492,21 +551,18 @@ label {
     order: 2;
   }
 
-  .pv1:hover,
-  .pv2:hover,
-  .pv3:hover,
-  .pv4:hover {
+  .pv:hover {
     transform: scale(1.05);
   }
 
-  .type_and_date > * {
+  .info > * {
     color: #6b778c;
     font-weight: 400px;
     font-size: 18px;
     line-height: 24px;
   }
 
-  .type_and_date p {
+  .info p {
     font-size: 16px;
     margin: 32px 0 24px;
   }
@@ -563,6 +619,10 @@ label {
     background-position: center;
   }
 
+  .popup_details > p {
+    flex: 3;
+  }
+
   #contact p {
     margin: 0 auto 36px;
     width: 569px;
@@ -599,5 +659,22 @@ label {
 
   .footer_list > li > ul > li > span {
     align-self: self-start;
+  }
+
+  .popup_details {
+    flex-direction: row;
+    margin-top: 59px;
+    gap: 24px;
+  }
+
+  .popup_details > div {
+    flex: 2;
+  }
+
+  .popup_pv {
+    order: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
