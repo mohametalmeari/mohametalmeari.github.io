@@ -26,7 +26,7 @@ body {
 }
 
 #menu_container {
-  display: block;
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -34,6 +34,10 @@ body {
   left: 0;
   background-color: #6070ffee;
 }
+
+/* .active {
+  display: block;
+} */
 
 .close_menu {
   float: right;
