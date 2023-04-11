@@ -12,18 +12,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
+    <div id="wrapper">
         <div class="header">
-            <a href=""><img class="mobile_logo" src="./images/mobile_logo.png" alt="Mo.almeari Logo"></a>
+            <a href="#wrapper"><img class="mobile_logo" src="./images/mobile_logo.png" alt="Mo.almeari Logo"></a>
             <nav class="menu">
-                <div class="menu_icon">
-                    <a href=""><i class="material-icons">menu</i></a>
+                <div id="menu_container">
+                    <a href="#wrapper" class="close_menu"><img src="./images/x.png" alt=""></a>
+                    <ul class="menu_list">
+                        <li><a href="#works">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>            
                 </div>
-                <ul class="menu_list">
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
+                <div id="menu_icon">
+                    <a href="#wrapper"><i class="material-icons">menu</i></a>
+                </div>
             </nav>
         </div>
         <section class="headline">
@@ -47,7 +50,7 @@
             </ul>
         </section>
 
-            <section class="works">
+            <section id="works">
                 <div class="card">
                     <div class="pv1">
                         <img class="preview" src="./images/SnapshootPortfolio1.png" alt="Website Preview">
@@ -169,7 +172,7 @@
                     </div>
                 </div>
             </section>  
-            <section class="aboutme">
+            <section id="about" class="aboutme">
                 <div class="footer_message">
                     <h2>About Myself</h2>
                     <p> 
