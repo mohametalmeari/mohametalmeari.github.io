@@ -352,6 +352,11 @@ button:hover {
   margin: 0 0 12px;
 }
 
+.popup_details > p {
+  text-align: justify;
+  margin: 0 0 12px;
+}
+
 #contact p {
   color: #ebebff;
   font-size: 20px;
@@ -390,7 +395,7 @@ label {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #C1C7D088;
+  background-color: #c1c7d088;
   z-index: 9999;
   padding: 77px 5%;
   overflow-y: scroll;
@@ -404,16 +409,10 @@ label {
   display: flex;
   flex-direction: column;
   margin-top: 12px;
-
-}
-
-.popup_details > p {
-  text-align: justify;
-  margin: 0 0 12px;
 }
 
 #x-popup {
-float: right;
+  float: right;
 }
 
 .popup_details hr {
@@ -436,10 +435,10 @@ float: right;
   gap: 8px;
   align-items: center;
 }
+
 .popup_btn button * {
   padding: 0;
 }
-
 
 @media screen and (min-width: 768px) {
   .header {
@@ -534,7 +533,6 @@ float: right;
     transition: transform 1s;
   }
 
-
   .pv1 {
     background-image: url("./images/SnapshootPortfolioDesktop1.png");
   }
@@ -621,6 +619,10 @@ float: right;
     background-position: center;
   }
 
+  .popup_details > p {
+    flex: 3;
+  }
+
   #contact p {
     margin: 0 auto 36px;
     width: 569px;
@@ -664,15 +666,12 @@ float: right;
     margin-top: 59px;
     gap: 24px;
   }
-  .popup_details > p {
-    flex: 3;
-  }
-  
+
   .popup_details > div {
     flex: 2;
   }
 
-  .popup_pv{
+  .popup_pv {
     order: 0;
     background-repeat: no-repeat;
     background-size: cover;
