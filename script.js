@@ -170,3 +170,22 @@ for (let i = 0; i < projects.length; i += 1) {
   });
 }
 
+function validateEmail(input, invalidMsg) {
+  const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+  const email = input.value.trim();
+  if (!emailRegex.test(email)) {
+    input.value = "";
+    const msg = input.parentNode.querySelector("small");
+    msg.innerText = invalidMsg;
+    return false;
+  }
+  return true;
+}
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  let emailValid = validateEmail(form.elements["email"], EMAIL_INVALID);
+  if (emailValid) {
+    form.submit();
+  }
+});
