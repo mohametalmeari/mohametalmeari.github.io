@@ -2,6 +2,8 @@ const menuContainer = document.getElementById('menu_container');
 const hamburger = document.getElementById('menu_icon');
 const xMenu = document.getElementById('x-menu');
 const menuLink = document.querySelectorAll('.menu-link');
+const form = document.querySelector('#contact_form');
+const EMAIL_INVALID = 'Please use lowercase letters for your email';
 
 hamburger.addEventListener('click', () => {
   menuContainer.style.display = 'block';
@@ -81,45 +83,27 @@ for (let i = 0; i < projects.length; i += 1) {
     tagsList += `<li>${projects[i].tags[j]}</li>`;
   }
   const card = document.createElement('div');
-  card.innerHTML = `${`<div class="card">
-          <div class="pv `
-    + 'pv'}${
-    i + 1
-  }">
+  card.innerHTML = `
+    <div class="card">
+          <div class="pv pv${i + 1}">
             <img
               class="preview"
-              src="${
-  projects[i].mobile_img
-}"
+              src="${projects[i].mobile_img}"
               alt="Website Preview"
             />
           </div>
           <div class="card_details">
-            <h2>${
-  projects[i].name
-}</h2>
+            <h2>${projects[i].name}</h2>
             <div class="type_and_date">
-              <span>${
-  projects[i].info[0]
-}</span>
+              <span>${projects[i].info[0]}</span>
               <span>●</span>
-              <span>${
-  projects[i].info[1]
-}</span>
+              <span>${projects[i].info[1]}</span>
               <span>●</span>
-              <span>${
-  projects[i].info[2]
-}</span>
+              <span>${projects[i].info[2]}</span>
             </div>
-            <p>${
-  projects[i].short_desciption
-}</p>
-            <ul class="prog_lang">${
-  tagsList
-}</ul>
-            <button type="button" id="see_project_${
-  i + 1
-}">See Project</button>
+            <p>${projects[i].short_desciption}</p>
+            <ul class="prog_lang">${tagsList}</ul>
+            <button type="button" id="see_project_${i + 1}">See Project</button>
           </div>
         </div>`;
   works.appendChild(card);
@@ -135,43 +119,26 @@ function createPopup(cardNo) {
 <div class="popup_card">
   <div class="popup_title">
     <img id="x-popup" src="./images/x-dark.png" alt="">
-    <h2>${
-  projects[cardNo].name
-}</h2>
+    <h2>${projects[cardNo].name}</h2>
     <div class="info">
-      <span>${
-  projects[cardNo].info[0]
-}</span>
+      <span>${projects[cardNo].info[0]}</span>
       <span>●</span>
-      <span>${
-  projects[cardNo].info[1]
-}</span>
+      <span>${projects[cardNo].info[1]}</span>
       <span>●</span>
-      <span>${
-  projects[cardNo].info[2]
-}</span>
+      <span>${projects[cardNo].info[2]}</span>
     </div>
   </div>
-  <div class="popup_pv `
-    + `pv${
-      cardNo + 1
-    }">
+  <div class="popup_pv pv${cardNo + 1}">
     <img
       class="preview"
-      src="${
-  projects[cardNo].mobile_img
-}"
+      src="${projects[cardNo].mobile_img}"
       alt="Website Preview"
     />
   </div>
   <div class="popup_details">
-  <p>${
-  projects[cardNo].description
-}</p>
+  <p>${projects[cardNo].description}</p>
     <div>
-      <ul class="prog_lang">${
-  tagsList
-}</ul>
+      <ul class="prog_lang">${tagsList}</ul>
       <hr>
       <div class="popup_btn">
         <button type="button" href="${
@@ -199,3 +166,23 @@ for (let i = 0; i < projects.length; i += 1) {
     });
   });
 }
+
+function validateEmail(input, invalidMsg) {
+  const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+  const email = input.value.trim();
+  if (!emailRegex.test(email)) {
+    input.value = '';
+    const msg = input.parentNode.querySelector('small');
+    msg.innerText = invalidMsg;
+    return false;
+  }
+  return true;
+}
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const emailValid = validateEmail(form.elements.email, EMAIL_INVALID);
+  if (emailValid) {
+    form.submit();
+  }
+});
