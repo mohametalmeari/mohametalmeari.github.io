@@ -201,3 +201,24 @@ if(localStorage.getItem('formData')) {
   fillForm();
 }
 
+function fillForm() {
+  const json = localStorage.getItem('formData');
+  const userInfoObj = JSON.parse(json);
+  document.getElementById('name').value = userInfoObj.name;
+  document.getElementById('email').value = userInfoObj.email;
+  document.getElementById('message').value = userInfoObj.message;
+}
+form.addEventListener("submit", function (event) {
+  populateStorage();
+});
+storage-feature
+function fillForm() {
+  const json = localStorage.getItem('formData');
+  const userInfoObj = JSON.parse(json);
+  document.getElementById('name').value = userInfoObj.name;
+  document.getElementById('email').value = userInfoObj.email;
+  document.getElementById('message').value = userInfoObj.message;
+}
+form.addEventListener("submit", function (event) {
+  populateStorage();
+});
