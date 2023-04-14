@@ -4,6 +4,7 @@ const xMenu = document.getElementById('x-menu');
 const menuLink = document.querySelectorAll('.menu-link');
 const form = document.querySelector('#contact_form');
 const EMAIL_INVALID = 'Please use lowercase letters for your email';
+const formField = document.querySelectorAll('.form_field');
 
 hamburger.addEventListener('click', () => {
   menuContainer.style.display = 'block';
@@ -186,3 +187,36 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
+
+// Form Input Local storage
+function populateStorage() {
+  const userInfoObj = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value,
+  };
+  const json = JSON.stringify(userInfoObj);
+  localStorage.setItem('formData', json);
+}
+
+function fillForm() {
+  const json = localStorage.getItem('formData');
+  const userInfoObj = JSON.parse(json);
+  document.getElementById('name').value = userInfoObj.name;
+  document.getElementById('email').value = userInfoObj.email;
+  document.getElementById('message').value = userInfoObj.message;
+}
+
+form.addEventListener('submit', () => {
+  populateStorage();
+});
+
+if (localStorage.getItem('formData')) {
+  fillForm();
+}
+
+for (let i = 0; i < 3; i += 1) {
+  formField[i].addEventListener('change', () => {
+    populateStorage();
+  });
+}
