@@ -188,37 +188,45 @@ form.addEventListener('submit', (event) => {
 });
 
 // Form Input Local storage
-function populateStorage() {  
-  const userInfoObj = {
-    name: document.getElementById('name').value,
-    email: document.getElementById('email').value,
-    message: document.getElementById('message').value,
-  };
-  const json = JSON.stringify(userInfoObj)
-  localStorage.setItem('formData', json);
+function storageAvailable(type) {
+  let storage;
+  try {
+    storage = window[type];
+    const x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return (
+      e instanceof DOMException
+      && (e.code === 22
+        || e.code === 1014
+        || e.name === 'QuotaExceededError'
+        || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+      && storage
+      && storage.length !== 0
+    );
+  }
 }
-if(localStorage.getItem('formData')) {
-  fillForm();
+
+function populateStorage() {
+  localStorage.setItem('name', document.getElementById('name').value);
+  localStorage.setItem('email', document.getElementById('email').value);
+  localStorage.setItem('message', document.getElementById('message').value);
 }
 
 function fillForm() {
-  const json = localStorage.getItem('formData');
-  const userInfoObj = JSON.parse(json);
-  document.getElementById('name').value = userInfoObj.name;
-  document.getElementById('email').value = userInfoObj.email;
-  document.getElementById('message').value = userInfoObj.message;
+  document.getElementById('name').value = localStorage.getItem('name');
+  document.getElementById('email').value = localStorage.getItem('email');
+  document.getElementById('message').value = localStorage.getItem('message');
 }
-form.addEventListener("submit", function (event) {
-  populateStorage();
-});
-storage-feature
-function fillForm() {
-  const json = localStorage.getItem('formData');
-  const userInfoObj = JSON.parse(json);
-  document.getElementById('name').value = userInfoObj.name;
-  document.getElementById('email').value = userInfoObj.email;
-  document.getElementById('message').value = userInfoObj.message;
+
+if (storageAvailable('localStorage')) {
+  if (localStorage.getItem('name')) {
+    fillForm();
+  }
+
+  form.addEventListener('submit', () => {
+    populateStorage();
+  });
 }
-form.addEventListener("submit", function (event) {
-  populateStorage();
-});
