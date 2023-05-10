@@ -24,43 +24,94 @@ for (let i = 0; i < menuLink.length; i += 1) {
 
 const projects = [
   {
-    name: 'Tonic',
+    name: 'To Do List',
     mobile_img: './images/SnapshootPortfolio1.png',
     desktop_img: './images/SnapshootPortfolioDesktop1.png',
-    info: ['CANOPY', 'Front End Dev', '2015'],
+    info: ['Microverse', 'Front End Dev', '2023'],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.",
+      `
+      Having a To-Do list is a great way to stay organized 
+      and manage your tasks efficiently. With so many things 
+      to do and so little time, it's easy to feel overwhelmed 
+      and unsure of where to start. That's where a To-Do list 
+      comes in handy! It's a simple tool that helps you keep 
+      track of all the tasks you need to complete in a given 
+      day, week, or month.
+
+      A To-Do list can be as basic or as detailed as you like. 
+      At its core, it's a list of tasks or activities that you 
+      need to complete, along with any deadlines or priorities 
+      that are associated with them. By having all your tasks 
+      in one place, you can quickly and easily see what needs 
+      to be done and when, without having to keep everything 
+      in your head.
+      
+      One of the benefits of using a To-Do list is that it 
+      can help you to stay focused and productive throughout
+      `,
     short_desciption:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'To Do List is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
     tags: ['HTML', 'CSS', 'JavaScript'],
-    live_link: '',
-    source_link: '',
+    live_link: 'https://mohametalmeari.github.io/To-Do-List-Project/dist/',
+    source_link: 'https://github.com/mohametalmeari/To-Do-List-Project/',
   },
   {
-    name: 'Multi-Post Stories',
+    name: 'Awesome Books',
     mobile_img: './images/SnapshootPortfolio2.png',
     desktop_img: './images/SnapshootPortfolioDesktop2.png',
-    info: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    info: ['Microverse', 'Full Stack Dev', '2023'],
     description:
-      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+      `
+      A Books Library that uses local storage is a convenient 
+      and simple way to keep track of your favorite books. 
+      With so many books available in the world today, it can 
+      be difficult to remember which ones you've read and which 
+      ones you want to read. This is where a Books Library 
+      comes in handy.
+
+      By using local storage to save your favorite books, you 
+      can easily access your collection from any device. Whether 
+      you're using your laptop, phone, or tablet, you can quickly 
+      view your collection and find the book you're looking for. 
+      Plus, because the data is stored locally, you don't need 
+      an internet connection to access your library.
+
+      Another benefit of using local storage for your Books 
+      Library is that it's secure and private. You don't need 
+      to worry about your data being shared or compromised, as 
+      it's all stored locally on your device. This also means 
+      that you have full control over your collection, and you 
+      can easily add or remove books as you please.
+      `,
     short_desciption:
-      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    tags: ['HTML', 'Ruby on Rails', 'CSS', 'JavaScript'],
-    live_link: '',
-    source_link: '',
+      'A Books Library that use local storage to save your favorite books.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    live_link: 'https://mohametalmeari.github.io/Awsome-Books-ES6/',
+    source_link: 'https://github.com/mohametalmeari/Awsome-Books-ES6',
   },
   {
-    name: 'Facebook 360',
+    name: 'NEBULA NIGHTS',
     mobile_img: './images/SnapshootPortfolio3.png',
     desktop_img: './images/SnapshootPortfolioDesktop3.png',
-    info: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    info: ['Microverse', 'Full Stack Dev', '2023'],
     description:
-      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+      `
+      The Interstellar Music Experience website is an 
+      innovative and unique concert that combines music, 
+      art, and technology to create an immersive journey 
+      through space. It features curated music, stunning 
+      visuals, and interactive elements that allow 
+      visitors to explore the depths of the cosmos. It's 
+      a celebration of the intersection of art, music, 
+      and technology and promises to be a truly 
+      unforgettable experience for space enthusiasts 
+      and music lovers alike.
+      `,
     short_desciption:
-      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+      "An Interstellar Music Experience is a one-of-a-kind concert that combines the best of music, art, and technology to create an immersive and unforgettable intergalactic journey through the cosmos.",
     tags: ['HTML', 'Ruby on Rails', 'CSS', 'JavaScript'],
-    live_link: '',
-    source_link: '',
+    live_link: 'https://mohametalmeari.github.io/',
+    source_link: 'https://github.com/mohametalmeari/CapstoneOne',
   },
   {
     name: 'Uber Navigation',
@@ -142,18 +193,22 @@ function createPopup(cardNo) {
       <ul class="prog_lang">${tagsList}</ul>
       <hr>
       <div class="popup_btn">
-        <button type="button" href="${
-  projects[cardNo].live_link
-}">See Live <img src="./images/live-icon.svg" alt=""></button>
-        <button type="button" href="${
-  projects[cardNo].source_link
-}">See source <img src="./images/source-icon.svg" alt=""></button>
+        <button id="live-btn" type="button">See Live <img src="./images/live-icon.svg" alt=""></button>
+        <button id="source-btn" type="button">See source <img src="./images/source-icon.svg" alt=""></button>
       </div>
     </div>
   </div>
 </div>
 </div>`;
   works.appendChild(popupWindow);
+  const liveBtn = document.getElementById('live-btn');
+  const sourceBtn = document.getElementById('source-btn');
+  liveBtn.addEventListener('click', () => {
+    window.location.href = projects[cardNo].live_link;
+  });
+  sourceBtn.addEventListener('click', () => {
+    window.location.href = projects[cardNo].source_link;
+  });
 }
 
 for (let i = 0; i < projects.length; i += 1) {
