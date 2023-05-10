@@ -70,7 +70,7 @@
 
 > Open the link bellow:
 
- - [Live Demo Link](https://mohametalmeari.github.io/)
+ - [Live Demo Link](https://mohametalmeari.github.io/Portfolio/)
  - [Outline Video](https://youtu.be/D_TjwStJm5Q)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
