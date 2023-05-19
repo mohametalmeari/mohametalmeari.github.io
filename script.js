@@ -114,17 +114,32 @@ const projects = [
     source_link: 'https://github.com/mohametalmeari/CapstoneOne',
   },
   {
-    name: 'Uber Navigation',
+    name: 'Leaderboard',
     mobile_img: './images/SnapshootPortfolio4.png',
     desktop_img: './images/SnapshootPortfolioDesktop4.png',
-    info: ['Uber', 'Lead Developer', '2018'],
+    info: ['Microverse', 'Front End Dev', '2023'],
     description:
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+      `
+      The leaderboard is a great way to track your progress 
+      and see how you stack up against other players. It 
+      displays scores submitted by different players, and 
+      it also allows you to submit your score.
+
+      To submit your score, simply enter your name and 
+      the score you achieved. Your score will then be added 
+      to the leaderboard for all to see.
+      
+      The leaderboard is a great way to stay motivated and 
+      competitive. It's also a great way to see how you're 
+      improving over time. So if you're looking for a way to 
+      track your progress and stay motivated, be sure to 
+      check out the leaderboard.
+      `,
     short_desciption:
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    tags: ['HTML', 'Ruby on Rails', 'CSS', 'JavaScript'],
-    live_link: '',
-    source_link: '',
+      'Leaderboard displays scores submitted by different players. It also allows you to submit your score.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    live_link: 'https://mohametalmeari.github.io/Leaderboard/dist/',
+    source_link: 'https://github.com/mohametalmeari/Leaderboard/',
   },
 ];
 
