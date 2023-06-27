@@ -1,9 +1,11 @@
 {
+  "homepage": "https://mohametalmeari.github.io/Portfolio",
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -19,5 +21,8 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
+  },
+  "dependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
