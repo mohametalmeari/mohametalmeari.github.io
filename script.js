@@ -109,7 +109,7 @@ const projects = [
       `,
     short_desciption:
       "An Interstellar Music Experience is a one-of-a-kind concert that combines the best of music, art, and technology to create an immersive and unforgettable intergalactic journey through the cosmos.",
-    tags: ['HTML', 'Ruby on Rails', 'CSS', 'JavaScript'],
+    tags: ['HTML', 'CSS', 'JavaScript'],
     live_link: 'https://mohametalmeari.github.io/',
     source_link: 'https://github.com/mohametalmeari/CapstoneOne',
   },
@@ -289,4 +289,26 @@ for (let i = 0; i < 3; i += 1) {
   formField[i].addEventListener('change', () => {
     populateStorage();
   });
+}
+
+const aboutmeList = document.querySelectorAll(".aboutme-list");
+const footerList = document.querySelector(".footer_list");
+footerList.addEventListener('click', (e) => {
+  if (e.target.parentNode.id === 'langs' || e.target.id === 'langs') {
+    aboutmeList[0].style.display = 'flex';
+    aboutmeList[1].style.display = 'none';
+    aboutmeList[2].style.display = 'none';
+  } else if (e.target.parentNode.id === 'frams' || e.target.id === 'frams') {
+    aboutmeList[1].style.display = 'flex';
+    aboutmeList[0].style.display = 'none';
+    aboutmeList[2].style.display = 'none';
+  }else if (e.target.parentNode.id === 'skills' || e.target.id === 'skills') {
+    aboutmeList[2].style.display = 'flex';
+    aboutmeList[1].style.display = 'none';
+    aboutmeList[0].style.display = 'none';
+  }
+});
+for (let i = 0; i < array.length; i++) {
+  const element = array[i];
+  
 }
