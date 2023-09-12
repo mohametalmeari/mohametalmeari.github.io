@@ -49,7 +49,7 @@ const projects = [
       One of the benefits of using a To-Do list is that it 
       can help you to stay focused and productive throughout
       `,
-    short_desciption:
+    short_description:
       'To Do List is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     live_link: 'https://mohametalmeari.github.io/To-Do-List-Project/dist/',
@@ -83,7 +83,7 @@ const projects = [
       that you have full control over your collection, and you 
       can easily add or remove books as you please.
       `,
-    short_desciption:
+    short_description:
       'A Books Library that use local storage to save your favorite books.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     live_link: 'https://mohametalmeari.github.io/Awsome-Books-ES6/',
@@ -107,7 +107,7 @@ const projects = [
       unforgettable experience for space enthusiasts 
       and music lovers alike.
       `,
-    short_desciption:
+    short_description:
       "An Interstellar Music Experience is a one-of-a-kind concert that combines the best of music, art, and technology to create an immersive and unforgettable intergalactic journey through the cosmos.",
     tags: ['HTML', 'CSS', 'JavaScript'],
     live_link: 'https://mohametalmeari.github.io/',
@@ -135,11 +135,39 @@ const projects = [
       track your progress and stay motivated, be sure to 
       check out the leaderboard.
       `,
-    short_desciption:
+    short_description:
       'Leaderboard displays scores submitted by different players. It also allows you to submit your score.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     live_link: 'https://mohametalmeari.github.io/Leaderboard/dist/',
     source_link: 'https://github.com/mohametalmeari/Leaderboard/',
+  },
+  {
+    name: 'i-budget',
+    mobile_img: './images/SnapshootPortfolio5.png',
+    desktop_img: './images/SnapshootPortfolioDesktop5.png',
+    info: ['Microverse', 'Back End Dev', '2023'],
+    description:
+      `
+      i-budget is a user-friendly mobile web application dedicated 
+      to enhancing your budget management experience. This innovative 
+      tool empowers users to take control of their finances effortlessly.
+
+      Getting started with i-budget is a breeze. Simply register and 
+      log in to access a wealth of financial management features. 
+      Add transactions to customizable categories tailored to your 
+      specific needs, providing you with a detailed overview of your 
+      spending habits.
+      
+      What sets i-budget apart is its unwavering commitment to security. 
+      We've implemented robust authentication measures to safeguard your 
+      financial data. Rest assured that your information is stored securely 
+      in a PostgreSQL database, ensuring the utmost privacy.
+      `,
+    short_description:
+      'i-budget is a mobile web application designed for efficient budget management',
+    tags: ['Ruby on Rails', 'CSS', 'PostgreSQL'],
+    live_link: 'https://i-budget.onrender.com/',
+    source_link: 'https://github.com/mohametalmeari/i-budget',
   },
 ];
 
@@ -168,7 +196,7 @@ for (let i = 0; i < projects.length; i += 1) {
               <span>●</span>
               <span>${projects[i].info[2]}</span>
             </div>
-            <p>${projects[i].short_desciption}</p>
+            <p>${projects[i].short_description}</p>
             <ul class="prog_lang">${tagsList}</ul>
             <button type="button" id="see_project_${i + 1}">See Project</button>
           </div>
