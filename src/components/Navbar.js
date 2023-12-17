@@ -12,7 +12,7 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const ref = useRef();
   useEffect(() => {
-    if (window.innerWidth > 600) {
+    if (window.innerWidth > 800) {
       setNavbarOpen(true);
     }
     const handler = (event) => {

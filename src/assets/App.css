@@ -260,10 +260,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f1ebe7;
   border-radius: 8px;
   padding: 8px;
   margin-bottom: 12px;
+  background-color: #396df233;
 }
 
 .work-img-container img {
@@ -314,6 +314,12 @@ main {
 
 .main-btn:hover {
   background-color: #396df233;
+}
+
+.form-btn:hover {
+  background-color: #86a8ff;
+  box-shadow: 0 0 8px -1px white;
+  color: white;
 }
 
 .about-container {
@@ -439,7 +445,7 @@ main {
   display: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .navbar {
     min-height: 72px;
     padding: 16px 140px;
@@ -472,11 +478,11 @@ main {
   }
 
   header {
-    padding: 72px 260px;
+    padding: 72px 100px;
   }
 
   main {
-    padding: 140px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     gap: 140px;
@@ -560,7 +566,7 @@ main {
   }
 
   footer {
-    padding: 500px;
+    padding: 100px;
     padding-top: 140px;
     padding-bottom: 130px;
   }
@@ -573,5 +579,25 @@ main {
   .menu-nav > li:active {
     background-color: rgba(0, 0, 255, 0.07);
     border-radius: 8px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    padding: 72px 260px;
+  }
+
+  main {
+    padding: 140px;
+  }
+
+  footer {
+    padding: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  footer {
+    padding: 300px;
   }
 }

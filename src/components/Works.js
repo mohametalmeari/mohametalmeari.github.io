@@ -6,7 +6,7 @@ const Works = () => {
   return (
     <main id="works">
       {
-        worksList.map((work) => (
+        worksList.slice().reverse().map((work) => (
           <WorkCard
             key={work.id}
             id={work.id}

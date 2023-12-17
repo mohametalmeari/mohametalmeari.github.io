@@ -5,6 +5,7 @@ import mobileImage2 from '../../assets/images/works/mobile/2.png';
 import mobileImage3 from '../../assets/images/works/mobile/3.png';
 import mobileImage4 from '../../assets/images/works/mobile/4.png';
 import mobileImage5 from '../../assets/images/works/mobile/5.png';
+import mobileImage6 from '../../assets/images/works/mobile/6.png';
 
 const initialState = {
   worksList: [
@@ -104,7 +105,7 @@ const initialState = {
       name: 'i-budget',
       mobileImg: mobileImage5,
       desktopImg: mobileImage5,
-      info: ['Microverse', 'Front End Dev', '2023'],
+      info: ['Microverse', 'Full Stack Dev', '2023'],
       tags: ['Ruby on Rails', 'CSS', 'PostgreSQL'],
       liveLink: 'https://i-budget.onrender.com',
       sourceLink: 'https://github.com/mohametalmeari/i-budget',
@@ -120,6 +121,33 @@ const initialState = {
       apart is its unwavering commitment to security. We've implemented robust authentication measures 
       to safeguard your financial data. Rest assured that your information is stored securely in a 
       PostgreSQL database, ensuring the utmost privacy.
+      `,
+    },
+    {
+      id: 6,
+      name: 'i-post',
+      mobileImg: mobileImage6,
+      desktopImg: mobileImage6,
+      info: ['Microverse', 'Full Stack Dev', '2023'],
+      tags: ['Ruby on Rails', 'CSS', 'PostgreSQL'],
+      liveLink: 'https://i-post-almeari.onrender.com/',
+      sourceLink: 'https://github.com/mohametalmeari/i-post',
+      shortDescription: `
+      i-Post is a Dynamic platform where you can share your thoughts, 
+      discover diverse content, and participate in engaging discussions. 
+      Your posts make you part of a lively community where you can connect with people.
+      `,
+      description: `
+      i-Post stands as a dynamic and vibrant platform, offering an interactive space 
+      for individuals to not only share their thoughts but also delve into a world of 
+      diverse content. This dynamic hub goes beyond being just a social space—it's a 
+      thriving community where every post contributes to a lively tapestry of ideas. 
+      By participating in i-Post, you become an integral part of a collective voice, 
+      connecting with like-minded individuals and fostering engaging discussions. The 
+      platform's essence lies in the power of shared experiences, providing an enriching 
+      environment where your posts not only express your thoughts but also spark 
+      connections and conversations that resonate within the i-Post community. Join 
+      us in shaping this dynamic space!
       `,
     },
   ],
