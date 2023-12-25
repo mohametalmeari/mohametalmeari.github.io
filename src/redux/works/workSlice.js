@@ -6,6 +6,8 @@ import mobileImage3 from '../../assets/images/works/mobile/3.png';
 import mobileImage4 from '../../assets/images/works/mobile/4.png';
 import mobileImage5 from '../../assets/images/works/mobile/5.png';
 import mobileImage6 from '../../assets/images/works/mobile/6.png';
+import mobileImage7 from '../../assets/images/works/mobile/7.png';
+import mobileImage8 from '../../assets/images/works/mobile/8.png';
 
 const initialState = {
   worksList: [
@@ -124,11 +126,40 @@ const initialState = {
       `,
     },
     {
+      id: 8,
+      name: 'Pokémon',
+      mobileImg: mobileImage8,
+      desktopImg: mobileImage8,
+      info: ['Microverse', 'Front End Dev', '2023'],
+      tags: ['HTML', 'CSS', 'JavaScript'],
+      liveLink: 'https://mo-dev.site/JavascriptCapstone/',
+      sourceLink: 'https://github.com/mohametalmeari/JavascriptCapstone',
+      shortDescription: `
+      Pokémon website is a hub for enthusiasts to explore a vast collection of Pokés. 
+      With engaging discussions and updates on new releases, it's a go-to platform 
+      for staying connected to the Pokémon community.
+      `,
+      description: `
+      The Pokémon website serves as a vibrant hub, inviting enthusiasts to immerse 
+      themselves in a vast collection of Pokés. Boasting engaging discussions and 
+      providing timely updates on the latest releases, it stands as the go-to platform 
+      for staying intricately connected to the dynamic and ever-evolving Pokémon 
+      community. This digital haven not only showcases an extensive array of Pokémon, 
+      but also fosters a sense of camaraderie among fans who share a common passion for 
+      these iconic creatures. Whether you're a seasoned Pokémon trainer or a newcomer 
+      eager to delve into the Pokémon universe, this website offers a comprehensive 
+      and interactive experience. From insightful discussions about gameplay strategies 
+      to the excitement surrounding new additions to the Pokémon world, the website acts 
+      as an indispensable resource for enthusiasts seeking to stay informed and engaged 
+      within the vibrant realm of Pokémon.
+      `,
+    },
+    {
       id: 6,
       name: 'i-post',
       mobileImg: mobileImage6,
       desktopImg: mobileImage6,
-      info: ['Microverse', 'Full Stack Dev', '2023'],
+      info: ['Personal Project', 'Full Stack Dev', '2023'],
       tags: ['Ruby on Rails', 'CSS', 'PostgreSQL'],
       liveLink: 'https://i-post-almeari.onrender.com/',
       sourceLink: 'https://github.com/mohametalmeari/i-post',
@@ -148,6 +179,32 @@ const initialState = {
       environment where your posts not only express your thoughts but also spark 
       connections and conversations that resonate within the i-Post community. Join 
       us in shaping this dynamic space!
+      `,
+    },
+    {
+      id: 7,
+      name: 'i-share',
+      mobileImg: mobileImage7,
+      desktopImg: mobileImage7,
+      info: ['Personal Project', 'Full Stack Dev', '2023'],
+      tags: ['React', 'Redux', 'CSS', 'Rails', 'PostgreSQL'],
+      liveLink: 'https://i-share-almeari.onrender.com/',
+      sourceLink: 'https://github.com/mohametalmeari/i-share-frontend',
+      shortDescription: `
+      i-share is a cool place for sharing photos online. You can post your pics, 
+      give stars to ones you like, and talk to people who love photos too. It's a 
+      fun way to connect and see awesome pictures from around the world. Join in, 
+      share your moments, and enjoy the visual stories!
+      `,
+      description: `
+      i-Share is an amazing platform designed for sharing captivating photos online. 
+      Here, you have the opportunity to effortlessly share your favorite pictures, 
+      express your admiration by giving stars, and engage in conversations with fellow 
+      photography enthusiasts. It's a delightful and interactive space where you 
+      can connect with people who share a passion for photos. Immerse yourself in 
+      the experience, share your cherished moments, and revel in the visual narratives 
+      that unfold from every corner of the globe. Join us in creating a vibrant 
+      community where every image tells a unique story!
       `,
     },
   ],

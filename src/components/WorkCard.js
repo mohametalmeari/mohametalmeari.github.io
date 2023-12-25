@@ -10,9 +10,20 @@ const WorkCard = ({
   const openPopup = () => {
     dispatch(openPopupReducer(id));
   };
+
+  const getRandomColor = () => {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i += 1) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    console.log(color);
+    return color;
+  };
+
   return (
     <div className="work-card-container">
-      <div className="work-img-container">
+      <div className="work-img-container" style={{ backgroundColor: getRandomColor() }}>
         <img src={desktopImg} alt={name} />
       </div>
       <div className="ignore-mobile">
