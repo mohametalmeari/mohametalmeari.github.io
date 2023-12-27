@@ -46,6 +46,8 @@ const Details = () => {
               ))}
             </section>
             <section className="details-btns-container">
+              {details.liveLink
+              && (
               <button className="main-btn details-btn" type="button">
                 <Link to={details.liveLink} target="_blank">
                   <span>
@@ -54,6 +56,7 @@ const Details = () => {
                   <LiveIcon />
                 </Link>
               </button>
+              )}
               <button className="main-btn details-btn" type="button">
                 <Link to={details.sourceLink} target="_blank">
                   <span>

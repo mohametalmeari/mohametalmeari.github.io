@@ -17,7 +17,6 @@ const WorkCard = ({
     for (let i = 0; i < 6; i += 1) {
       color += letters[Math.floor(Math.random() * 16)];
     }
-    console.log(color);
     return color;
   };
 

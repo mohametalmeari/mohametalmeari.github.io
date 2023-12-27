@@ -6,6 +6,7 @@ import {
 import jsIcon from '../assets/images/skills/js.png';
 import htmlIcon from '../assets/images/skills/html.png';
 import cssIcon from '../assets/images/skills/css.png';
+import rubyIcon from '../assets/images/skills/ruby.webp';
 import reactIcon from '../assets/images/skills/React-icon.png';
 import rorIcon from '../assets/images/skills/Ruby-on-rails.png';
 import bootstrapIcon from '../assets/images/skills/Bootstrap.png';
@@ -108,6 +109,12 @@ const About = () => {
               <img src={cssIcon} alt="icon" />
               <span>
                 CSS
+              </span>
+            </li>
+            <li className="skill-card">
+              <img src={rubyIcon} alt="icon" />
+              <span>
+                Ruby
               </span>
             </li>
           </ul>
