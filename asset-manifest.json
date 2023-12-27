@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2c927757.css",
-    "main.js": "/static/js/main.bde39d88.js",
+    "main.css": "/static/css/main.0f10b2ec.css",
+    "main.js": "/static/js/main.6f5a4bb1.js",
     "static/js/787.cc3e7c46.chunk.js": "/static/js/787.cc3e7c46.chunk.js",
     "static/media/13.png": "/static/media/13.03974a0e139c26176274.png",
     "static/media/8.png": "/static/media/8.4a9da8505545cb9484ed.png",
@@ -22,7 +22,7 @@
     "static/media/2.png": "/static/media/2.dda12282f4f5a6c757fb.png",
     "static/media/Teamwork.png": "/static/media/Teamwork.dd99bfb375c5881b95dd.png",
     "static/media/6.png": "/static/media/6.343c3fadb7309c9a3a87.png",
-    "static/media/MohamadAlmeariResume.pdf": "/static/media/MohamadAlmeariResume.22bc856643706914b552.pdf",
+    "static/media/MohamadAlmeariResume.pdf": "/static/media/MohamadAlmeariResume.309ac4943926d0c261dc.pdf",
     "static/media/4.png": "/static/media/4.6a79c216e9a61df7cfa0.png",
     "static/media/Mentoring.png": "/static/media/Mentoring.ac02c3bc0f59679966eb.png",
     "static/media/1.png": "/static/media/1.f536ac25392826b7a4f0.png",
@@ -33,12 +33,12 @@
     "static/media/header-bg.svg": "/static/media/header-bg.7ac5444dbf87e05527ed.svg",
     "static/media/footer-bg.svg": "/static/media/footer-bg.2bca070d47df9719585d.svg",
     "index.html": "/index.html",
-    "main.2c927757.css.map": "/static/css/main.2c927757.css.map",
-    "main.bde39d88.js.map": "/static/js/main.bde39d88.js.map",
+    "main.0f10b2ec.css.map": "/static/css/main.0f10b2ec.css.map",
+    "main.6f5a4bb1.js.map": "/static/js/main.6f5a4bb1.js.map",
     "787.cc3e7c46.chunk.js.map": "/static/js/787.cc3e7c46.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c927757.css",
-    "static/js/main.bde39d88.js"
+    "static/css/main.0f10b2ec.css",
+    "static/js/main.6f5a4bb1.js"
   ]
 }
