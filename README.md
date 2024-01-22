@@ -2,10 +2,10 @@
 
 <div align="center">
 
-  <img src="images\large_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="./src/assets/images/readme-logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Mo.Almeari Protfolio README</b></h3>
+  <h3><b>Portfolio README</b></h3>
 
 </div>
 
@@ -35,28 +35,29 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Mo.Almeari - Protfolio <a name="about-project"></a>
+# 📖 Mo.Almeari - Portfolio <a name="about-project"></a>
 
-**Mo.Almeari - Protfolio** showcases my web development skills and experience with visually appealing examples of my best projects. It gives potential clients/employers an insight into what I can bring to their projects.
+**Mo.Almeari - Portfolio** showcases my web development skills and experience with visually appealing examples of my best projects. It gives potential clients/employers an insight into what I can bring to their projects.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Our tech stack consisting of only HTML and CSS for the front-end.
-
 <details>
-  <summary>Client</summary>
+  <summary>Framework</summary>
   <ul>
-    <li><a href="https://www.w3schools.com/html/">HTML</a></li>
-    <li><a href="https://www.w3schools.com/css/">CSS</a></li>
+    <li><a href="https://reactjs.org/">React.js</a></li>
   </ul>
 </details>
 
+<details>
+  <summary>Library</summary>
+  <ul>
+    <li><a href="https://redux.js.org/">Redux</a></li>
+  </ul>
+</details>
 
 ### Key Features <a name="key-features"></a>
-
-> Key Features of a Web Developer's Portfolio Website
 
 - **Showcase of projects**
 - **Overview of experience and capabilities**
@@ -70,7 +71,7 @@
 
 > Open the link bellow:
 
- - [Live Demo Link](https://mohametalmeari.github.io/Portfolio/)
+ - [Live Demo Link](https://mo-dev.site)
  - [Outline Video](https://youtu.be/D_TjwStJm5Q)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -79,10 +80,7 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> A new developer can use this project as a guide to creating their own portfolio website, showcasing their skills and expertise and giving potential clients or employers an idea of what they can bring to their projects.
-
 To get a local copy up and running, follow these steps.
-
 
 ### Setup
 
@@ -90,22 +88,39 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:mohametalmeari/Portfolio.git
+  git clone https://github.com/mohametalmeari/mohametalmeari.github.io.git
+```
+
+### Install
+
+Install this project with:
+
+```sh
+  cd mohametalmeari.github.io
+  npm install
+```
+
+### Prerequisites
+
+In order to run this project you need:
+
+```sh
+  npm run build
 ```
 
 ### Usage
 
-How to open your project in the browser? 
-Double click on HTML file and the HTML file will be open in your browser.
+To run the project, execute the following command:
 
+```sh
+  npm start
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> This project was done by Mohamad.
 
 👤 **Mohamad**
 
@@ -118,8 +133,6 @@ Double click on HTML file and the HTML file will be open in your browser.
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> The portfolio website will contain more animations in the future, providing a fully responsive design for optimal user experience.
 
 - [ ] **Animated Logo**
 - [ ] **Animated Buttons**
@@ -141,17 +154,14 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Share and Review!
-
 We invite you to share this project with others and provide a favorable review if you find it to be useful.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDnpmENTS -->
+<!-- ACKNOWLEDGMENTS -->
 
-## 🙏 Acknowledgments <a name="acknowlednpments"></a>
+## 🙏 Acknowledgments <a name="acknowledgments"></a>
 
-> Thank You Microverse!
 
 I would like to thank Microverse team for helping me building to learn web development.
 
@@ -162,7 +172,7 @@ I would like to thank Microverse team for helping me building to learn web devel
 ## ❓ FAQ <a name="faq"></a>
 
   
-- **How to build Protfolio?**
+- **How to build Portfolio?**
 
   - Follow the steps in this link https://github.com/microverseinc/curriculum-html-css/blob/main/portfolio/1_setup.md
 
