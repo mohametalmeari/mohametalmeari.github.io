@@ -43,7 +43,7 @@ const WorkCard = ({
         className="work-img-container"
         style={{ backgroundColor: getRandomColor() }}
       >
-        <img src={desktopImg} alt={name} />
+        <img src={desktopImg} alt={name} width="400" height="300" />
       </div>
       <div className="ignore-mobile">
         <h2 className="work-name">{name}</h2>
@@ -66,7 +66,7 @@ const WorkCard = ({
           ))}
         </section>
         <button className="main-btn" type="button" onClick={() => openPopup()}>
-          see project
+          See project
         </button>
       </div>
     </motion.div>

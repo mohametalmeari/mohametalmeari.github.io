@@ -359,17 +359,53 @@ textarea {
 
 .main-btn {
   align-self: flex-start;
-  background-color: white;
+  background-color: transparent;
   padding: 12px;
   margin: 12px 0;
   border-radius: 8px;
   border: solid 1px #6070ff;
   font-family: Poppins-Medium, Roboto, sans-serif;
   color: #396df2;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .main-btn:hover {
-  background-color: #396df233;
+  background-color: #6070FF;
+  backdrop-filter: blur(16px);
+  color: white;
+}
+
+.download-icon {
+  opacity: 0.5;
+}
+
+.main-btn:hover > .download-icon {
+  transform: translateY(4px);
+  animation: moveDown 1s ease-in-out infinite;
+  opacity: 0.8;
+}
+
+@keyframes moveDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+}
+
+.main-btn:focus {
+  background-color: #2230D2;
+  color: white;
+}
+
+.main-btn:disabled {
+  border-color: #C1C7D0;
+  color: #5E6C84;
 }
 
 .form-btn:hover {
@@ -399,6 +435,7 @@ textarea {
   justify-content: space-between;
   align-items: center;
   padding: 24px 34px 24px 12px;
+  transition: all 0.2s ease-in-out;
 }
 
 .skill-tab:hover {

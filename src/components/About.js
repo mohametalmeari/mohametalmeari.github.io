@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useDispatch } from 'react-redux';
+import { HiDownload } from 'react-icons/hi';
 import { RightArrowIcon, DownArrowIcon } from '../assets/icons';
 import jsIcon from '../assets/images/skills/js.png';
 import htmlIcon from '../assets/images/skills/html.png';
@@ -12,9 +13,9 @@ import bootstrapIcon from '../assets/images/skills/Bootstrap.png';
 import teamworkIcon from '../assets/images/skills/Teamwork.png';
 import mentoringIcon from '../assets/images/skills/Mentoring.png';
 import pairProgrammingIcon from '../assets/images/skills/Pair-programming.png';
-import Pdf from '../assets/MohamadAlmeariResume.pdf';
 import { setActiveSection } from '../redux/navbar/navSlice';
 import Links from './Links';
+import { bio } from '../redux/data';
 
 const About = () => {
   const [listOne, setListOne] = useState('none');
@@ -63,17 +64,20 @@ const About = () => {
       <div className="ignore-mobile">
         <h2>About Myself</h2>
         <p className="about-text">
-          Hello I&#39;m a software developer! I can help you build a product ,
-          feature or website. Look through some of my work and experience! If
-          you like what you see and have a project you need coded, don&#39;t
-          hesitate to contact me.
+          Hello
+          {bio}
         </p>
         <Links />
-        <button className="main-btn" type="button">
-          <a className="btn-link" href={Pdf} target="_blank" rel="noreferrer">
-            Get my resume
-          </a>
-        </button>
+        <a
+          className="main-btn"
+          target="_blank"
+          rel="noreferrer"
+          href="http://resume.mo-dev.site/"
+          download
+        >
+          Get my resume
+          <HiDownload className="download-icon" />
+        </a>
       </div>
       <ul className="skills-container">
         <li className="skill-item">
