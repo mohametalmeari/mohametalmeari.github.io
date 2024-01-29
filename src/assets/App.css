@@ -83,7 +83,7 @@
   transform: translateX(-100vw);
 }
 
-.nav-item > a {
+.nav-item>a {
   color: white;
   font-weight: 600;
 }
@@ -383,16 +383,19 @@ textarea {
   opacity: 0.5;
 }
 
-.main-btn:hover > .download-icon {
+.main-btn:hover>.download-icon {
   transform: translateY(4px);
   animation: moveDown 1s ease-in-out infinite;
   opacity: 0.8;
 }
 
 @keyframes moveDown {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(4px);
   }
@@ -505,7 +508,7 @@ textarea {
   flex: 1;
 }
 
-.details-btn > a > span {
+.details-btn>a>span {
   color: #396df2;
   font-size: 15px;
   font-family: Poppins-Medium, Roboto, sans-serif;
@@ -571,12 +574,12 @@ textarea {
     flex: 1;
   }
 
-  .nav-item > a {
+  .nav-item>a {
     color: #6070ffc1;
   }
 
-  .nav-item > a:hover,
-  .nav-item.active > a {
+  .nav-item>a:hover,
+  .nav-item.active>a {
     color: #6070ff;
   }
 
@@ -639,15 +642,15 @@ textarea {
     background-color: rgb(249, 249, 255);
   }
 
-  .work-card-container:hover > .work-img-container {
+  .work-card-container:hover>.work-img-container {
     box-shadow: solid 1px #cfd8dc;
   }
 
-  .work-card-container:nth-child(odd):hover > .work-img-container {
+  .work-card-container:nth-child(odd):hover>.work-img-container {
     transform: rotate(3deg) translate(-8px, 40px) scale(1.05);
   }
 
-  .work-card-container:nth-child(even):hover > .work-img-container {
+  .work-card-container:nth-child(even):hover>.work-img-container {
     transform: rotate(-3deg) translate(8px, 40px) scale(1.05);
   }
 
@@ -702,7 +705,7 @@ textarea {
     flex-direction: column;
   }
 
-  .work-card-container > * {
+  .work-card-container>* {
     flex: 1;
   }
 
@@ -754,11 +757,11 @@ textarea {
     padding: 166px 140px;
   }
 
-  .about-container > .ignore-mobile {
+  .about-container>.ignore-mobile {
     gap: 12px;
   }
 
-  .about-container > * {
+  .about-container>* {
     flex: 1;
   }
 
@@ -773,12 +776,12 @@ textarea {
     padding-bottom: 130px;
   }
 
-  .menu-nav > li:hover {
+  .menu-nav>li:hover {
     background-color: rgba(0, 0, 0, 0.07);
     border-radius: 8px;
   }
 
-  .menu-nav > li:active {
+  .menu-nav>li:active {
     background-color: rgba(0, 0, 255, 0.07);
     border-radius: 8px;
   }

@@ -11,7 +11,129 @@ import mobileImage10 from '../assets/images/works/mobile/10.png';
 import mobileImage11 from '../assets/images/works/mobile/11.png';
 import mobileImage12 from '../assets/images/works/mobile/12.png';
 
+import jsIcon from '../assets/images/skills/jsIcon.png';
+import tsIcon from '../assets/images/skills/tsIcon.png';
+import rubyIcon from '../assets/images/skills/rubyIcon.png';
+import htmlIcon from '../assets/images/skills/htmlIcon.png';
+import cssIcon from '../assets/images/skills/cssIcon.png';
+import scssIcon from '../assets/images/skills/scssIcon.png';
+
+import reactIcon from '../assets/images/skills/reactIcon.png';
+import reduxIcon from '../assets/images/skills/reduxIcon.png';
+import nextIcon from '../assets/images/skills/nextIcon.png';
+import rorIcon from '../assets/images/skills/rorIcon.png';
+import tailwindIcon from '../assets/images/skills/tailwindIcon.png';
+import bootstrapIcon from '../assets/images/skills/bootstrapIcon.png';
+
+import gitIcon from '../assets/images/skills/gitIcon.png';
+import pgIcon from '../assets/images/skills/pgIcon.png';
+import jestIcon from '../assets/images/skills/jestIcon.png';
+import rspecIcon from '../assets/images/skills/rspecIcon.png';
+
+import teamworkIcon from '../assets/images/skills/teamworkIcon.png';
+import mentoringIcon from '../assets/images/skills/mentoringIcon.png';
+import remotePairIcon from '../assets/images/skills/remotePairIcon.png';
+
 export const bio = "I'm a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.";
+
+export const skills = [
+  {
+    title: 'Languages',
+    list: [
+      {
+        name: 'JavaScript',
+        icon: jsIcon,
+      },
+      {
+        name: 'TypeScript',
+        icon: tsIcon,
+      },
+      {
+        name: 'Ruby',
+        icon: rubyIcon,
+      },
+      {
+        name: 'HTML',
+        icon: htmlIcon,
+      },
+      {
+        name: 'CSS',
+        icon: cssIcon,
+      },
+      {
+        name: 'SCSS',
+        icon: scssIcon,
+      },
+    ],
+  },
+  {
+    title: 'Frameworks',
+    list: [
+      {
+        name: 'React',
+        icon: reactIcon,
+      },
+      {
+        name: 'Redux',
+        icon: reduxIcon,
+      },
+      {
+        name: 'Next.js',
+        icon: nextIcon,
+      },
+      {
+        name: 'Ruby on Rails',
+        icon: rorIcon,
+      },
+      {
+        name: 'Tailwind CSS',
+        icon: tailwindIcon,
+      },
+      {
+        name: 'Bootstrap',
+        icon: bootstrapIcon,
+      },
+    ],
+  },
+  {
+    title: 'Tools',
+    list: [
+      {
+        name: 'Git',
+        icon: gitIcon,
+      },
+      {
+        name: 'PostgreSQL',
+        icon: pgIcon,
+      },
+      {
+        name: 'Jest',
+        icon: jestIcon,
+      },
+      {
+        name: 'RSpec',
+        icon: rspecIcon,
+      },
+    ],
+  },
+  {
+    title: 'Professional Skills',
+    list: [
+      {
+        name: 'Teamwork',
+        icon: teamworkIcon,
+      },
+      {
+        name: 'Mentoring',
+        icon: mentoringIcon,
+      },
+      {
+        name: 'Remote Pair-Programming',
+        icon: remotePairIcon,
+      },
+    ],
+  },
+];
 
 export const projects = [
   {
