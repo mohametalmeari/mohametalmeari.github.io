@@ -161,6 +161,22 @@ main {
   max-width: 800px;
 }
 
+
+.work-tags span {
+  background-color: #ebebff;
+  padding: 4px 12px;
+  border-radius: 8px;
+  color: #6070ff;
+  font-family: Poppins-Medium, Roboto, sans-serif;
+  margin-bottom: 12px;
+}
+
+.work-info span {
+  font-family: Poppins-SemiBold, Roboto, sans-serif;
+  font-size: 13px;
+  color: #7a869a;
+}
+
 @font-face {
   font-family: Poppins-Bold;
   src: url(./fonts/Poppins-Bold.ttf);
@@ -594,6 +610,12 @@ textarea {
     transform: rotate(-3deg) translate(10px, 24px);
   }
 
+  .work-card-container {
+    padding: 0;
+    flex-direction: row;
+    min-height: 400px;
+    overflow: hidden;
+  }
 
   /* old style */
   .navbar {
@@ -633,14 +655,7 @@ textarea {
     gap: 140px;
   }
 
-  .work-card-container {
-    padding: 0;
-    flex-direction: row;
 
-    /* gap: 22px; */
-    max-height: 400px;
-    overflow: hidden;
-  }
 
   .details-container .work-card-container {
     flex-direction: column;
@@ -668,7 +683,9 @@ textarea {
   .work-short,
   .work-long {
     margin-bottom: 24px;
+    flex-grow: 1;
   }
+
 
   .work-tags span {
     margin-bottom: 24px;

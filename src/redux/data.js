@@ -288,7 +288,7 @@ export const projects = [
     mobileImg: mobileImage12,
     desktopImg: mobileImage12,
     info: ['Personal Project', 'Full Stack Dev', '2023'],
-    tags: ['React', 'Redux', 'CSS', 'Rails', 'PostgreSQL'],
+    tags: ['React', 'Redux', 'CSS', 'Rails API', 'PostgreSQL'],
     liveLink: 'https://i-share-almeari.onrender.com/',
     sourceLink: 'https://github.com/mohametalmeari/i-share-frontend',
     shortDescription: `

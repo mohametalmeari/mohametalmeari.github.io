@@ -38,7 +38,10 @@ const WorkCard = ({
             </>
           ))}
         </section>
-        <p className="work-short">{shortDescription}</p>
+        <p className="work-short">
+          {shortDescription.slice(0, 150)}
+          {shortDescription.length > 150 && <span>...</span>}
+        </p>
         <section className="work-tags">
           {tags.map((tag) => (
             <span key={tag}>{tag}</span>
