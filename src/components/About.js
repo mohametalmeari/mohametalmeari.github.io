@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
+import { useDispatch } from 'react-redux';
 import {
   GithubIcon, LinkedinIcon, MediumIcon, TwitterIcon, RightArrowIcon, DownArrowIcon,
 } from '../assets/icons';
@@ -14,6 +16,7 @@ import teamworkIcon from '../assets/images/skills/Teamwork.png';
 import mentoringIcon from '../assets/images/skills/Mentoring.png';
 import pairProgrammingIcon from '../assets/images/skills/Pair-programming.png';
 import Pdf from '../assets/MohamadAlmeariResume.pdf';
+import { setActiveSection } from '../redux/navbar/navSlice';
 
 const About = () => {
   const [listOne, setListOne] = useState('none');
@@ -46,8 +49,19 @@ const About = () => {
       setListThree('none');
     }
   };
+
+  const { ref, inView, entry } = useInView({
+    threshold: 0.75,
+  });
+  const dispatch = useDispatch();
+  useEffect(() => {
+    if (inView) {
+      dispatch(setActiveSection(entry.target.id));
+    }
+  }, [inView, ref, entry]);
+
   return (
-    <div className="about-container" id="about">
+    <div className="about-container" id="about" ref={ref}>
       <div className="ignore-mobile">
 
         <h2>

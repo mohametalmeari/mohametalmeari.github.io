@@ -1,60 +1,113 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { BurgerMenuIcon, CloseMenuIcon } from '../assets/icons';
-import logo from '../assets/images/mobile_logo.png';
+import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 
 const links = [
-  { path: 'works', text: 'Portfolio' },
+  { path: 'home', text: 'Home' },
+  { path: 'works', text: 'Projects' },
   { path: 'about', text: 'About' },
   { path: 'contact', text: 'Contact' },
 ];
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const ref = useRef();
+  const [activeLink, setActiveLink] = useState('home');
+  const [activeLinkIndex, setActiveLinkIndex] = useState(0);
+  const [navbarScrollAnimation, setNavbarScrollAnimation] = useState(true);
+  const { activeSection } = useSelector((state) => state.navbar);
+
   useEffect(() => {
-    if (window.innerWidth > 800) {
-      setNavbarOpen(true);
-    }
-    const handler = (event) => {
-      if (
-        navbarOpen
-        && ref.current
-        && !ref.current.contains(event.target)
-      ) {
-        setNavbarOpen(false);
+    if (navbarScrollAnimation) {
+      setActiveLink(activeSection);
+      switch (activeSection) {
+        case 'home':
+          setActiveLinkIndex(0);
+          break;
+        case 'works':
+          setActiveLinkIndex(1);
+          break;
+        case 'about':
+          setActiveLinkIndex(2);
+          break;
+        case 'contact':
+          setActiveLinkIndex(3);
+          break;
+        default:
+          setActiveLinkIndex(0);
+          break;
       }
-    };
-    document.addEventListener('mousedown', handler);
-    return () => {
-      // Cleanup the event listener
-      document.removeEventListener('mousedown', handler);
-    };
-  }, [navbarOpen]);
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
     }
-    setNavbarOpen(false);
+  }, [activeSection]);
+
+  const toggleMenu = () => {
+    setNavbarOpen(!navbarOpen);
   };
+
+  const pauseNavbarScrollAnimation = () => {
+    setNavbarScrollAnimation(false);
+    setTimeout(() => {
+      setNavbarScrollAnimation(true);
+    }, 1000);
+  };
+
   return (
-    <nav ref={ref} className="navbar">
-      <button className="none-btn" type="button" onClick={() => scrollToSection('home')}>
-        <img className="my-logo" src={logo} alt="logo" />
+    <nav>
+      <button
+        style={{
+          position: 'fixed',
+          top: 0,
+          right: 0,
+          outline: 'none',
+          border: 'none',
+          margin: '1rem',
+          padding: '0.3rem',
+          backdropFilter: 'blur(8px)',
+          backgroundColor: navbarOpen
+            ? 'transparent'
+            : 'rgba(235, 235, 255, 0.8)',
+          boxShadow: navbarOpen || '2px 2px 4px -1px rgb(223, 225, 230)',
+          zIndex: 999,
+          borderRadius: '50%',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          aspectRatio: '1/1',
+        }}
+        onClick={() => toggleMenu()}
+        type="button"
+      >
+        <div className="menu-icon">
+          {<span className={`line${navbarOpen ? ' open' : ''}`} /> || 'Menu'}
+        </div>
       </button>
-      <button className="toggle" onClick={() => setNavbarOpen((prev) => !prev)} type="button">
-        {navbarOpen ? (
-          <CloseMenuIcon />
 
-        ) : (
-          <BurgerMenuIcon />
-        )}
-      </button>
-
-      <ul className={`menu-nav${navbarOpen ? ' show-menu' : ''}`}>
-        {links.map((link) => (
-          <li key={link.text}>
-            <button className="nav-link" type="button" onClick={() => scrollToSection(link.path)}>{link.text}</button>
+      <ul className={`nav-links${navbarOpen ? ' open' : ''}`}>
+        <span
+          className="active-mask"
+          style={{ left: `${2 + 24.5 * activeLinkIndex}%` }}
+        />
+        {links.map((link, index) => (
+          <li
+            className={`nav-item${navbarOpen ? ' open' : ''}${
+              activeLink === link.path ? ' active' : ''
+            }`}
+            style={{
+              transition: `all ${
+                (links.length - index) * 0.2 + 0.2
+              }s ease-in-out`,
+            }}
+            key={link.text}
+          >
+            <a
+              href={`#${link.path}`}
+              onClick={() => {
+                toggleMenu();
+                setActiveLink(link.path);
+                pauseNavbarScrollAnimation();
+                setActiveLinkIndex(index);
+              }}
+            >
+              {link.text}
+            </a>
           </li>
         ))}
       </ul>

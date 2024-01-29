@@ -1,3 +1,97 @@
+.menu-icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  width: 24px;
+  transition: all 0.4s ease-in-out;
+}
+
+.line {
+  left: 0;
+  height: 3px;
+  width: 24px;
+  position: absolute;
+  transition: inherit;
+  background-color: #6070ff;
+}
+
+.line.open {
+  width: 0;
+  background-color: white;
+}
+
+.line::before,
+.line::after {
+  left: 0;
+  content: '';
+  position: absolute;
+  height: 3px;
+  background-color: inherit;
+  transition: inherit;
+}
+
+.line.open::before,
+.line.open::after {
+  transition: inherit;
+  width: 24px;
+}
+
+.line::before {
+  width: 24px;
+  transform: translateY(-8px);
+}
+
+.line.open::before {
+  transform: translateY(0) rotate(135deg);
+}
+
+.line::after {
+  width: 18px;
+  transform: translateY(8px);
+}
+
+.line.open::after {
+  transform: translateY(0) rotate(-135deg);
+}
+
+.nav-links {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 998;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  font-size: 2rem;
+  background-color: rgba(96, 112, 255, 0.8);
+  backdrop-filter: blur(5px);
+  color: white;
+  transition: all 0.5s ease-in-out;
+  left: -100%;
+}
+
+.nav-links.open {
+  left: 0;
+}
+
+.nav-item {
+  transform: translateX(-100vw);
+}
+
+.nav-item > a {
+  color: white;
+  font-weight: 600;
+}
+
+.nav-item.open {
+  transform: translateX(0);
+}
+
 @font-face {
   font-family: Poppins-Bold;
   src: url(./fonts/Poppins-Bold.ttf);
@@ -24,6 +118,7 @@
 }
 
 * {
+  scroll-behavior: smooth;
   box-sizing: border-box;
   color: var(--neutrals-color);
   list-style: none;
@@ -86,7 +181,7 @@ svg {
   flex-direction: column;
   gap: 8px;
   justify-content: center;
-  background-color: #6070ffb0;
+  background-color: #6070ff8f;
   backdrop-filter: blur(10px);
 }
 
@@ -446,7 +541,61 @@ main {
   display: none;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-links,
+  .nav-links.open {
+    top: 1rem;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: auto;
+    flex-direction: row;
+    background-color: #ebebffd2;
+    padding: 6px;
+    border-radius: 2rem;
+    font-size: 1rem;
+    gap: 0;
+    box-shadow: 2px 2px 4px -1px #dfe1e6;
+    width: 600px;
+  }
+
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    padding: 8px 16px;
+    /* margin: 0 16px; */
+    border-radius: 999rem;
+    transform: translateX(0);
+    /* background-color: red; */
+    flex: 1;
+  }
+
+  .nav-item > a {
+    color: #6070ffc1;
+  }
+
+  .nav-item > a:hover,
+  .nav-item.active > a {
+    color: #6070ff;
+  }
+
+  .active-mask {
+    position: absolute;
+    margin: 0 8px;
+    top: 10%;
+    width: 20%;
+    height: 80%;
+    background-color: rgba(97, 113, 255, 0.1);
+    border-radius: 999rem;
+    transition: all 0.4s ease-in-out;
+  }
+
   .navbar {
     min-height: 72px;
     padding: 16px 140px;

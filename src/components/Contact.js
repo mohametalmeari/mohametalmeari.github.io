@@ -1,4 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
+import { useDispatch } from 'react-redux';
+import { setActiveSection } from '../redux/navbar/navSlice';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -16,6 +19,16 @@ const Contact = () => {
       [name]: value,
     });
   };
+
+  const { ref, inView, entry } = useInView({
+    threshold: 0.75,
+  });
+  const dispatch = useDispatch();
+  useEffect(() => {
+    if (inView) {
+      dispatch(setActiveSection(entry.target.id));
+    }
+  }, [inView, ref, entry]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -47,7 +60,7 @@ const Contact = () => {
 
   return (
     <>
-      <footer id="contact">
+      <footer id="contact" ref={ref}>
         <h2 className="footer-title">
           Contact me
         </h2>
