@@ -602,12 +602,16 @@ textarea {
     background-color: rgb(249, 249, 255);
   }
 
+  .work-card-container:hover > .work-img-container {
+    box-shadow: solid 1px #cfd8dc;
+  }
+
   .work-card-container:nth-child(odd):hover > .work-img-container {
-    transform: rotate(3deg) translate(-10px, 24px);
+    transform: rotate(3deg) translate(-8px, 40px) scale(1.05);
   }
 
   .work-card-container:nth-child(even):hover > .work-img-container {
-    transform: rotate(-3deg) translate(10px, 24px);
+    transform: rotate(-3deg) translate(8px, 40px) scale(1.05);
   }
 
   .work-card-container {

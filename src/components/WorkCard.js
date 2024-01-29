@@ -21,7 +21,7 @@ const WorkCard = ({
   };
 
   return (
-    <div className="work-card-container animation-grow">
+    <div className="work-card-container">
       <div className="work-img-container" style={{ backgroundColor: getRandomColor() }}>
         <img src={desktopImg} alt={name} />
       </div>
