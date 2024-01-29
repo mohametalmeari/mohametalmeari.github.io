@@ -10,7 +10,7 @@ const TypeHeader = () => (
     ]}
     wrapper="span"
     speed={10}
-    // style={{ fontSize: '2em', display: 'inline-block' }}
+    style={{ fontSize: '2rem', display: 'inline-block' }}
     repeat={Infinity}
   />
 );
