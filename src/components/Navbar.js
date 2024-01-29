@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
 const links = [
-  { path: 'home', text: 'Home' },
+  { path: 'home', text: 'Intro' },
   { path: 'works', text: 'Projects' },
   { path: 'about', text: 'About' },
   { path: 'contact', text: 'Contact' },
