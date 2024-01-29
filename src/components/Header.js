@@ -1,16 +1,11 @@
-import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
-import {
-  GithubIcon,
-  LinkedinIcon,
-  MediumIcon,
-} from '../assets/icons';
 import Particle from './Particle';
 import TypeHeader from './TypeHeader';
 import { bio } from '../redux/data';
 import { setActiveSection } from '../redux/navbar/navSlice';
+import Links from './Links';
 
 const Header = () => {
   const { ref, inView, entry } = useInView({
@@ -35,26 +30,7 @@ const Header = () => {
             <TypeHeader />
           </h2>
           <p className="header-text">{bio}</p>
-          <a
-            className="connect-link"
-            href="#contact"
-          >
-            LET&#39;S CONNECT
-          </a>
-          <section className="header-icons-container">
-            <Link
-              to="https://www.linkedin.com/in/mohamet-almeari/"
-              target="_blank"
-            >
-              <LinkedinIcon />
-            </Link>
-            <Link to="https://medium.com/@mohamet.almeari" target="_blank">
-              <MediumIcon />
-            </Link>
-            <Link to="https://github.com/mohametalmeari" target="_blank">
-              <GithubIcon />
-            </Link>
-          </section>
+          <Links />
         </div>
       </header>
     </>

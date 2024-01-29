@@ -128,6 +128,18 @@ header {
   line-height: 24px;
 }
 
+.animation-grow{
+  transition: all 0.2s ease-in-out;
+}
+
+.animation-grow:hover{
+  transform: scale(1.1);
+}
+
+.animation-grow:focus{
+  transform: scale(1.05);
+}
+
 @font-face {
   font-family: Poppins-Bold;
   src: url(./fonts/Poppins-Bold.ttf);
