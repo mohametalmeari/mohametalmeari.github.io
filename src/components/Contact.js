@@ -21,7 +21,7 @@ const Contact = () => {
   };
 
   const { ref, inView, entry } = useInView({
-    threshold: 0.75,
+    threshold: 0.5,
   });
   const dispatch = useDispatch();
   useEffect(() => {
