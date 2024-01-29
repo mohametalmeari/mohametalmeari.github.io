@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
+import { useScroll, motion, useTransform } from 'framer-motion';
+import { useRef } from 'react';
 import { CircleIcon } from '../assets/icons';
 import { openPopupReducer } from '../redux/works/workSlice';
 
@@ -19,16 +21,32 @@ const WorkCard = ({
     }
     return color;
   };
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['0 1', '1.33 1'],
+  });
+
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
-    <div className="work-card-container">
-      <div className="work-img-container" style={{ backgroundColor: getRandomColor() }}>
+    <motion.div
+      className="work-card-container"
+      ref={ref}
+      style={{
+        scale: scaleProgress,
+        opacity: opacityProgress,
+      }}
+    >
+      <div
+        className="work-img-container"
+        style={{ backgroundColor: getRandomColor() }}
+      >
         <img src={desktopImg} alt={name} />
       </div>
       <div className="ignore-mobile">
-        <h2 className="work-name">
-          {name}
-        </h2>
+        <h2 className="work-name">{name}</h2>
         <section className="work-info">
           <span>{info[0]}</span>
           {info.slice(1).map((item) => (
@@ -51,7 +69,7 @@ const WorkCard = ({
           see project
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
