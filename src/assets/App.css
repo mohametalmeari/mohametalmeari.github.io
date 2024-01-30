@@ -1,3 +1,23 @@
+::-webkit-scrollbar-thumb {
+  background-color: #6070ff;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ebebffd2;
+}
+
+u {
+  text-decoration: underline;
+}
+code {
+  font-size: 24px;
+  line-height: 36px;
+}
+
 .menu-icon {
   position: relative;
   display: flex;
