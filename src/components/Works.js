@@ -26,10 +26,10 @@ const Works = () => {
           <WorkCard
             key={work.name}
             name={work.name}
-            desktopImg={work.desktopImg}
+            projectImage={work.projectImage}
             info={work.info}
             tags={work.tags}
-            shortDescription={work.shortDescription}
+            description={work.description}
             liveLink={work.liveLink}
             sourceLink={work.sourceLink}
           />

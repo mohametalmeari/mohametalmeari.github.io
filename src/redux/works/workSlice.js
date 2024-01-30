@@ -1,21 +1,15 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { projects } from '../data';
-import exampleImage from '../../assets/images/works/mobile/0.png';
 
 const initialState = {
   worksList: projects,
   details: {
-    id: 0,
     name: 'Project',
-    mobileImg: exampleImage,
-    desktopImg: exampleImage,
+    projectImage: '',
     info: [],
     tags: [],
     liveLink: '...',
     sourceLink: '...',
-    shortDescription: `
-    ...
-      `,
     description: `
     ...
       `,

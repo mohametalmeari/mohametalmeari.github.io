@@ -1,15 +1,15 @@
-import mobileImage1 from '../assets/images/works/mobile/1.png';
-import mobileImage2 from '../assets/images/works/mobile/2.png';
-import mobileImage3 from '../assets/images/works/mobile/3.png';
-import mobileImage4 from '../assets/images/works/mobile/4.png';
-import mobileImage5 from '../assets/images/works/mobile/5.png';
-import mobileImage6 from '../assets/images/works/mobile/6.png';
-import mobileImage7 from '../assets/images/works/mobile/7.png';
-import mobileImage8 from '../assets/images/works/mobile/8.png';
-import mobileImage9 from '../assets/images/works/mobile/9.png';
-import mobileImage10 from '../assets/images/works/mobile/10.png';
-import mobileImage11 from '../assets/images/works/mobile/11.png';
-import mobileImage12 from '../assets/images/works/mobile/12.png';
+import projectImage2 from '../assets/images/works/2.png';
+import projectImage3 from '../assets/images/works/3.png';
+import projectImage4 from '../assets/images/works/4.png';
+import projectImage5 from '../assets/images/works/5.png';
+import projectImage1 from '../assets/images/works/1.png';
+import projectImage6 from '../assets/images/works/6.png';
+import projectImage7 from '../assets/images/works/7.png';
+import projectImage8 from '../assets/images/works/8.png';
+import projectImage9 from '../assets/images/works/9.png';
+import projectImage10 from '../assets/images/works/10.png';
+import projectImage11 from '../assets/images/works/11.png';
+import projectImage12 from '../assets/images/works/12.png';
 
 import jsIcon from '../assets/images/skills/jsIcon.png';
 import tsIcon from '../assets/images/skills/tsIcon.png';
@@ -140,8 +140,7 @@ export const skills = [
 export const projects = [
   {
     name: 'To Do List',
-    mobileImg: mobileImage1,
-    desktopImg: mobileImage1,
+    projectImage: projectImage1,
     info: ['Microverse', 'Front End Dev', '2023'],
     tags: ['HTML', 'CSS', 'JavaScript'],
     liveLink: 'https://mohametalmeari.github.io/To-Do-List-Project/dist/',
@@ -164,8 +163,7 @@ export const projects = [
   },
   {
     name: 'Awesome Books',
-    mobileImg: mobileImage2,
-    desktopImg: mobileImage2,
+    projectImage: projectImage2,
     info: ['Microverse', 'Front End Dev', '2023'],
     tags: ['HTML', 'CSS', 'JavaScript'],
     liveLink: 'https://mohametalmeari.github.io/Awesome-Books-ES6/',
@@ -191,16 +189,10 @@ export const projects = [
   },
   {
     name: 'Catalog of My Things',
-    mobileImg: mobileImage3,
-    desktopImg: mobileImage3,
+    projectImage: projectImage3,
     info: ['Microverse', 'Back End Dev', '2023'],
     tags: ['Ruby', 'PostgreSQL'],
     sourceLink: 'https://github.com/mohametalmeari/my-things',
-    shortDescription: `
-    Catalog of My Things, a console app, records owned items like books, music albums, and games using a 
-    UML class diagram. Data is stored in JSON files and a corresponding database with tables mirroring the 
-    program's class structure is prepared.
-    `,
     description: `
     The "Catalog of My Things" is a console app designed to meticulously document owned items, 
     encompassing books, music albums, and games. The application employs a Unified Modeling 
@@ -212,17 +204,11 @@ export const projects = [
   },
   {
     name: 'Math Magicians',
-    mobileImg: mobileImage4,
-    desktopImg: mobileImage4,
+    projectImage: projectImage4,
     info: ['Microverse', 'Front End Dev', '2023'],
     tags: ['React', 'Redux', 'CSS'],
     liveLink: 'https://almeari-math-magicians.onrender.com',
     sourceLink: 'https://github.com/mohametalmeari/math-magicians',
-    shortDescription: `
-    This website is a simple calculator that can perform basic math operations, including addition, 
-    subtraction, multiplication, division, and modulo. Additionally, the website features a page 
-    dedicated to cool random quotes that aim to keep you motivated and optimistic. Feel free to check it out!
-    `,
     description: `
     Discover a user-friendly haven for basic mathematical operations with this website's simple calculator. 
     It seamlessly executes fundamental math tasks such as addition, subtraction, multiplication, division, 
@@ -236,16 +222,11 @@ export const projects = [
   },
   {
     name: 'NEBULA NIGHTS',
-    mobileImg: mobileImage5,
-    desktopImg: mobileImage5,
+    projectImage: projectImage5,
     info: ['Microverse', 'Front End Dev', '2023'],
     tags: ['HTML', 'CSS', 'JavaScript'],
     liveLink: 'https://mohametalmeari.github.io/CapstoneOne',
     sourceLink: 'https://github.com/mohametalmeari/CapstoneOne',
-    shortDescription: `
-    An Interstellar Music Experience is a one-of-a-kind concert that combines the best of music, art, 
-    and technology to create an immersive and unforgettable intergalactic journey through the cosmos.
-    `,
     description: `
     The Interstellar Music Experience website is an innovative and unique concert that combines music, 
     art, and technology to create an immersive journey through space. It features curated music, stunning 
@@ -256,15 +237,11 @@ export const projects = [
   },
   {
     name: 'Leaderboard',
-    mobileImg: mobileImage6,
-    desktopImg: mobileImage6,
+    projectImage: projectImage6,
     info: ['Microverse', 'Front End Dev', '2023'],
     tags: ['HTML', 'CSS', 'JavaScript'],
     liveLink: 'https://mohametalmeari.github.io/Leaderboard/dist',
     sourceLink: 'https://github.com/mohametalmeari/Leaderboard',
-    shortDescription: `
-    Leaderboard displays scores submitted by different players. It also allows you to submit your score.
-    `,
     description: `
     The leaderboard is a great way to track your progress and see how you stack up against other players. 
     It displays scores submitted by different players, and it also allows you to submit your score. To 
@@ -276,17 +253,11 @@ export const projects = [
   },
   {
     name: 'YU-GI-OH!',
-    mobileImg: mobileImage7,
-    desktopImg: mobileImage7,
+    projectImage: projectImage7,
     info: ['Microverse', 'Front End Dev', '2023'],
     tags: ['React', 'Redux', 'CSS'],
-    liveLink: 'https://mo-dev.site/yugioh-react-capstone',
+    liveLink: 'https://mohametalmeari.github.io/yugioh-react-capstone',
     sourceLink: 'https://github.com/mohametalmeari/yugioh-react-capstone',
-    shortDescription: `
-    YU-GI-OH is a cool website that tells you all about the awesome playing cards from the Yu-Gi-Oh! anime. 
-    It's a place where you can learn and discover more about these cards. If you're a big fan of Yu-Gi-Oh!, 
-    this website is perfect for you to explore and learn about your favorite cards!
-    `,
     description: `
     Yu-Gi-Oh! enthusiasts rejoice, as there's a captivating website dedicated to unraveling the mystique of 
     the phenomenal playing cards featured in the iconic Yu-Gi-Oh! anime. This cool platform serves as a haven 
@@ -301,16 +272,11 @@ export const projects = [
   },
   {
     name: 'Bookstore',
-    mobileImg: mobileImage8,
-    desktopImg: mobileImage8,
+    projectImage: projectImage8,
     info: ['Microverse', 'Front End Dev', '2023'],
     tags: ['React', 'Redux', 'CSS'],
     liveLink: 'https://mohametalmeari.github.io/bookstore/',
     sourceLink: 'https://github.com/mohametalmeari/bookstore',
-    shortDescription: `
-    Bookstore is a user-friendly website designed for saving books, organizing your literary collection, 
-    and monitoring the progress of your favorite books as you read them.
-    `,
     description: `
     Bookstore is a helpful website for book lovers. It lets you save and organize your favorite books. 
     You can also keep track of how far you've read in each book. The site is easy to use, making it 
@@ -321,15 +287,11 @@ export const projects = [
   },
   {
     name: 'i-budget',
-    mobileImg: mobileImage9,
-    desktopImg: mobileImage9,
+    projectImage: projectImage9,
     info: ['Microverse', 'Full Stack Dev', '2023'],
     tags: ['Ruby on Rails', 'CSS', 'PostgreSQL'],
     liveLink: 'https://i-budget.onrender.com',
     sourceLink: 'https://github.com/mohametalmeari/i-budget',
-    shortDescription: `
-    i-budget is a mobile web application designed for efficient budget management
-    `,
     description: `
     i-budget is a user-friendly mobile web application dedicated to enhancing your budget management 
     experience. This innovative tool empowers users to take control of their finances effortlessly. 
@@ -343,17 +305,11 @@ export const projects = [
   },
   {
     name: 'Pokémon',
-    mobileImg: mobileImage10,
-    desktopImg: mobileImage10,
+    projectImage: projectImage10,
     info: ['Microverse', 'Front End Dev', '2023'],
     tags: ['HTML', 'CSS', 'JavaScript'],
-    liveLink: 'https://mo-dev.site/JavascriptCapstone/',
+    liveLink: 'https://mohametalmeari.github.io/JavascriptCapstone/',
     sourceLink: 'https://github.com/mohametalmeari/JavascriptCapstone',
-    shortDescription: `
-    Pokémon website is a hub for enthusiasts to explore a vast collection of Pokés. 
-    With engaging discussions and updates on new releases, it's a go-to platform 
-    for staying connected to the Pokémon community.
-    `,
     description: `
     The Pokémon website serves as a vibrant hub, inviting enthusiasts to immerse 
     themselves in a vast collection of Pokés. Boasting engaging discussions and 
@@ -371,17 +327,11 @@ export const projects = [
   },
   {
     name: 'i-post',
-    mobileImg: mobileImage11,
-    desktopImg: mobileImage11,
+    projectImage: projectImage11,
     info: ['Personal Project', 'Full Stack Dev', '2023'],
     tags: ['Ruby on Rails', 'CSS', 'PostgreSQL'],
     liveLink: 'https://i-post-almeari.onrender.com/',
     sourceLink: 'https://github.com/mohametalmeari/i-post',
-    shortDescription: `
-    i-Post is a Dynamic platform where you can share your thoughts, 
-    discover diverse content, and participate in engaging discussions. 
-    Your posts make you part of a lively community where you can connect with people.
-    `,
     description: `
     i-Post stands as a dynamic and vibrant platform, offering an interactive space 
     for individuals to not only share their thoughts but also delve into a world of 
@@ -397,18 +347,11 @@ export const projects = [
   },
   {
     name: 'i-share',
-    mobileImg: mobileImage12,
-    desktopImg: mobileImage12,
+    projectImage: projectImage12,
     info: ['Personal Project', 'Full Stack Dev', '2023'],
     tags: ['React', 'Redux', 'CSS', 'Rails API', 'PostgreSQL'],
     liveLink: 'https://i-share-almeari.onrender.com/',
     sourceLink: 'https://github.com/mohametalmeari/i-share-frontend',
-    shortDescription: `
-    i-share is a cool place for sharing photos online. You can post your pics, 
-    give stars to ones you like, and talk to people who love photos too. It's a 
-    fun way to connect and see awesome pictures from around the world. Join in, 
-    share your moments, and enjoy the visual stories!
-    `,
     description: `
     i-Share is an amazing platform designed for sharing captivating photos online. 
     Here, you have the opportunity to effortlessly share your favorite pictures, 

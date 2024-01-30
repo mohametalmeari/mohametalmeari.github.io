@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { CircleIcon } from '../assets/icons';
 
 const WorkCard = ({
-  name, desktopImg, info, tags, shortDescription, liveLink, sourceLink,
+  name, projectImage, info, tags, description, liveLink, sourceLink,
 }) => {
   const getRandomColor = () => {
     const letters = '0123456789ABCDEF';
@@ -37,7 +37,7 @@ const WorkCard = ({
         className="work-img-container"
         style={{ backgroundColor: getRandomColor() }}
       >
-        <img src={desktopImg} alt={name} width="400" height="300" />
+        <img src={projectImage} alt={name} width="400" height="300" />
       </div>
       <div className="ignore-mobile">
         <h2 className="work-name">{name}</h2>
@@ -51,8 +51,8 @@ const WorkCard = ({
           ))}
         </section>
         <p className="work-short">
-          {shortDescription.slice(0, 150)}
-          {shortDescription.length > 150 && <span>...</span>}
+          {description.slice(0, 150)}
+          {description.length > 150 && <span>...</span>}
         </p>
         <section className="work-tags">
           {tags.map((tag) => (
@@ -82,10 +82,10 @@ const WorkCard = ({
 
 WorkCard.propTypes = {
   name: PropTypes.string.isRequired,
-  desktopImg: PropTypes.string.isRequired,
+  projectImage: PropTypes.string.isRequired,
   info: PropTypes.string.isRequired,
   tags: PropTypes.string.isRequired,
-  shortDescription: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
   liveLink: PropTypes.string.isRequired,
   sourceLink: PropTypes.string.isRequired,
 };
