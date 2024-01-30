@@ -6,6 +6,10 @@ const links = [
   { path: 'works', text: 'Projects' },
   { path: 'about', text: 'About' },
   { path: 'contact', text: 'Contact' },
+  {
+    path: 'https://github.com/mohametalmeari/mohametalmeari.github.io',
+    text: 'Source Code',
+  },
 ];
 
 const Navbar = () => {
@@ -14,6 +18,13 @@ const Navbar = () => {
   const [activeLinkIndex, setActiveLinkIndex] = useState(0);
   const [navbarScrollAnimation, setNavbarScrollAnimation] = useState(true);
   const { activeSection } = useSelector((state) => state.navbar);
+
+  // Navbar active link animation variables
+  const linkWidth = 120;
+  const lastLinkWidth = 400;
+  const maskWidth = 100;
+  const navPadding = 6;
+  const maskLeft = navPadding + (linkWidth - maskWidth) / 2 + linkWidth * activeLinkIndex;
 
   useEffect(() => {
     if (navbarScrollAnimation) {
@@ -80,36 +91,73 @@ const Navbar = () => {
         </div>
       </button>
 
-      <ul className={`nav-links${navbarOpen ? ' open' : ''}`}>
+      <ul
+        className={`nav-links${navbarOpen ? ' open' : ''}`}
+        style={{ padding: `${navPadding}px` }}
+      >
         <span
           className="active-mask"
-          style={{ left: `${2 + 24.5 * activeLinkIndex}%` }}
+          style={{
+            left: `${maskLeft}px`,
+            width: `${maskWidth}px`,
+          }}
         />
-        {links.map((link, index) => (
-          <li
-            className={`nav-item${navbarOpen ? ' open' : ''}${
-              activeLink === link.path ? ' active' : ''
-            }`}
-            style={{
-              transition: `all ${
-                (links.length - index) * 0.2 + 0.2
-              }s ease-in-out`,
-            }}
+        {links.slice(0, links.length - 1).map((link, index) => (
+          <div
             key={link.text}
+            className="link-container"
+            style={{
+              width: `${linkWidth}px`,
+            }}
           >
-            <a
-              href={`#${link.path}`}
-              onClick={() => {
-                toggleMenu();
-                setActiveLink(link.path);
-                pauseNavbarScrollAnimation();
-                setActiveLinkIndex(index);
+            <li
+              className={`nav-item${navbarOpen ? ' open' : ''}${
+                activeLink === link.path ? ' active' : ''
+              }`}
+              style={{
+                transition: `all ${
+                  (links.length - index) * 0.2 + 0.2
+                }s ease-in-out`,
               }}
             >
-              {link.text}
+              <a
+                href={`#${link.path}`}
+                onClick={() => {
+                  toggleMenu();
+                  setActiveLink(link.path);
+                  pauseNavbarScrollAnimation();
+                  setActiveLinkIndex(index);
+                }}
+              >
+                {link.text}
+              </a>
+            </li>
+          </div>
+        ))}
+        <div
+          className="link-container"
+          style={{
+            width: `${lastLinkWidth}px`,
+          }}
+        >
+          <li
+            className={`nav-item${navbarOpen ? ' open' : ''} last-link`}
+            style={{
+              transition: `all ${0.4}s ease-in-out`,
+            }}
+          >
+            <a
+              href={links[links.length - 1].path}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => {
+                toggleMenu();
+              }}
+            >
+              {links[links.length - 1].text}
             </a>
           </li>
-        ))}
+        </div>
       </ul>
     </nav>
   );
