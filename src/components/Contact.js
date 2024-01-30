@@ -113,7 +113,7 @@ const Contact = () => {
               />
             </label>
             <div className="btn_container">
-              <button className="main-btn form-btn" type="submit">
+              <button className="form-btn" type="submit">
                 Get in touch
               </button>
               <span className="form-msg" style={{ color: errorMsg.color }}>

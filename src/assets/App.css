@@ -13,6 +13,7 @@
 u {
   text-decoration: underline;
 }
+
 code {
   font-size: 24px;
   line-height: 36px;
@@ -439,15 +440,14 @@ textarea {
   gap: 8px;
 }
 
-.main-btn {
+.main-btn,
+.form-btn {
   align-self: flex-start;
   background-color: transparent;
   padding: 12px;
   margin: 12px 0;
   border-radius: 8px;
-  border: solid 1px #6070ff;
   font-family: Poppins-Medium, Roboto, sans-serif;
-  color: #396df2;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   display: flex;
@@ -455,10 +455,40 @@ textarea {
   gap: 8px;
 }
 
+.main-btn {
+  color: #396df2;
+  border: solid 1px #6070ff;
+}
+
+.form-btn {
+  color: white;
+  border: solid 1px white;
+}
+
 .main-btn:hover {
   background-color: #6070FF;
   backdrop-filter: blur(16px);
   color: white;
+}
+
+.main-btn:focus {
+  background-color: #2230D2;
+  color: white;
+}
+
+.main-btn:disabled {
+  border-color: #C1C7D0;
+  color: #5E6C84;
+}
+
+.form-btn:hover {
+  background-color: white;
+  color: #6070FF;
+}
+
+.form-btn:focus {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #6070FF;
 }
 
 .download-icon {
@@ -483,27 +513,11 @@ textarea {
   }
 }
 
-.main-btn:focus {
-  background-color: #2230D2;
-  color: white;
-}
-
-.main-btn:disabled {
-  border-color: #C1C7D0;
-  color: #5E6C84;
-}
-
-.form-btn:hover {
-  background-color: #86a8ff;
-  box-shadow: 0 0 8px -1px white;
-  color: white;
-}
-
 .about-container {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  border-radius: 0 80px 0 0;
+  border-radius: 0 80px;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 114px 24px;
 }
@@ -769,11 +783,17 @@ textarea {
   .contact {
     padding-top: 140px;
     padding-bottom: 130px;
+    border-radius: 160px 0 0 0;
   }
 
   footer {
     justify-content: flex-start;
   }
+
+  header {
+    border-radius: 0 0 0 160px;
+  }
+
   /* old style */
   .navbar {
     min-height: 72px;
@@ -868,6 +888,7 @@ textarea {
   .about-container {
     flex-direction: row;
     padding: 166px 140px;
+    border-radius: 0 160px;
   }
 
   .about-container>.ignore-mobile {
