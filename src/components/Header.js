@@ -3,9 +3,9 @@ import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import Particle from './Particle';
 import TypeHeader from './TypeHeader';
-import { bio } from '../redux/data';
 import { setActiveSection } from '../redux/navbar/navSlice';
 import Links from './Links';
+import Bio from './Bio';
 
 const Header = () => {
   const { ref, inView, entry } = useInView({
@@ -29,7 +29,7 @@ const Header = () => {
           <h2 className="type-header">
             <TypeHeader />
           </h2>
-          <p className="header-text">{bio}</p>
+          <p className="header-text"><Bio /></p>
           <Links />
         </div>
       </header>

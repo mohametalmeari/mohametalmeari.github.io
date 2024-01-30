@@ -22,7 +22,7 @@ const Navbar = () => {
   // Navbar active link animation variables
   const linkWidth = 120;
   const lastLinkWidth = 400;
-  const maskWidth = 100;
+  const maskWidth = 90;
   const navPadding = 6;
   const maskLeft = navPadding + (linkWidth - maskWidth) / 2 + linkWidth * activeLinkIndex;
 

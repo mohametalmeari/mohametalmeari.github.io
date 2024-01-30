@@ -5,7 +5,8 @@ import { HiDownload } from 'react-icons/hi';
 import { RightArrowIcon } from '../assets/icons';
 import { setActiveSection } from '../redux/navbar/navSlice';
 import Links from './Links';
-import { bio, skills } from '../redux/data';
+import { skills } from '../redux/data';
+import Bio from './Bio';
 
 const About = () => {
   const [spreadList, setSpreadList] = useState();
@@ -24,8 +25,9 @@ const About = () => {
       <div className="ignore-mobile">
         <h2>About Myself</h2>
         <p className="about-text">
-          Hello
-          {bio}
+          <code>Hello</code>
+          {' '}
+          <Bio />
         </p>
         <Links />
         <a
