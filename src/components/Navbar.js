@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
+import { motion } from 'framer-motion';
 
 const links = [
   { path: 'home', text: 'Intro' },
@@ -61,7 +62,15 @@ const Navbar = () => {
   };
 
   return (
-    <nav>
+    <motion.nav
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        type: 'tween',
+        duration: 0.2,
+        delay: 0,
+      }}
+    >
       <button
         style={{
           position: 'fixed',
@@ -159,7 +168,7 @@ const Navbar = () => {
           </li>
         </div>
       </ul>
-    </nav>
+    </motion.nav>
   );
 };
 export default Navbar;

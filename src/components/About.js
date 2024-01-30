@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useDispatch } from 'react-redux';
 import { HiDownload } from 'react-icons/hi';
+import { motion } from 'framer-motion';
 import { RightArrowIcon } from '../assets/icons';
 import { setActiveSection } from '../redux/navbar/navSlice';
 import Links from './Links';
@@ -23,23 +24,51 @@ const About = () => {
   return (
     <div className="about-container" id="about" ref={ref}>
       <div className="ignore-mobile">
-        <h2>About Myself</h2>
-        <p className="about-text">
+        <motion.h2
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            type: 'tween',
+            duration: 0.2,
+            delay: 0.1,
+          }}
+        >
+          About Myself
+        </motion.h2>
+        <motion.p
+          className="about-text"
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            type: 'tween',
+            duration: 0.2,
+            delay: 0.2,
+          }}
+        >
           <code>Hello</code>
           {' '}
           <Bio />
-        </p>
+        </motion.p>
         <Links />
-        <a
+        <motion.a
           className="main-btn"
           target="_blank"
           rel="noreferrer"
           href="http://resume.mo-dev.site/"
           download
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.01,
+            delay: 0.55,
+          }}
         >
           Get my resume
           <HiDownload className="download-icon" />
-        </a>
+        </motion.a>
       </div>
 
       <ul className="skills-container">
@@ -68,7 +97,9 @@ const About = () => {
                 <RightArrowIcon />
               </span>
             </button>
-            <ul
+            <motion.ul
+              initial={{ y: -50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
               style={
                 spreadList === group.title
                   ? { display: 'flex' }
@@ -83,7 +114,7 @@ const About = () => {
                   {skill.tag && <span className="tag">{skill.tag}</span>}
                 </li>
               ))}
-            </ul>
+            </motion.ul>
           </li>
         ))}
       </ul>
