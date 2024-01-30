@@ -883,7 +883,6 @@ textarea {
   }
 
   .about-container {
-    flex-direction: row;
     padding: 166px 140px;
     border-radius: 0 160px;
   }
@@ -909,5 +908,11 @@ textarea {
   .menu-nav > li:active {
     background-color: rgba(0, 0, 255, 0.07);
     border-radius: 8px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-container {
+    flex-direction: row;
   }
 }
