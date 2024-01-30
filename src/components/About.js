@@ -78,6 +78,7 @@ const About = () => {
                 <li className="skill-card" key={skill.name}>
                   <img src={skill.icon} alt="icon" />
                   <span>{skill.name}</span>
+                  {skill.tag && <span className="tag">{skill.tag}</span>}
                 </li>
               ))}
             </ul>

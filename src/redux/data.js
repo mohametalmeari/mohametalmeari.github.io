@@ -45,14 +45,6 @@ export const skills = [
         icon: jsIcon,
       },
       {
-        name: 'TypeScript',
-        icon: tsIcon,
-      },
-      {
-        name: 'Ruby',
-        icon: rubyIcon,
-      },
-      {
         name: 'HTML',
         icon: htmlIcon,
       },
@@ -63,6 +55,15 @@ export const skills = [
       {
         name: 'SCSS',
         icon: scssIcon,
+      },
+      {
+        name: 'TypeScript',
+        icon: tsIcon,
+        tag: 'learning',
+      },
+      {
+        name: 'Ruby',
+        icon: rubyIcon,
       },
     ],
   },
@@ -80,6 +81,7 @@ export const skills = [
       {
         name: 'Next.js',
         icon: nextIcon,
+        tag: 'learning',
       },
       {
         name: 'Ruby on Rails',
@@ -103,16 +105,16 @@ export const skills = [
         icon: gitIcon,
       },
       {
-        name: 'PostgreSQL',
-        icon: pgIcon,
-      },
-      {
         name: 'Jest',
         icon: jestIcon,
       },
       {
         name: 'RSpec',
         icon: rspecIcon,
+      },
+      {
+        name: 'PostgreSQL',
+        icon: pgIcon,
       },
     ],
   },
