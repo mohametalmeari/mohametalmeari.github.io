@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useDispatch } from 'react-redux';
+import { motion } from 'framer-motion';
 import { setActiveSection } from '../redux/navbar/navSlice';
 import Footer from './Footer';
 
@@ -61,13 +62,35 @@ const Contact = () => {
     <>
       <div className="contact" id="contact" ref={ref}>
         <div className="form-container">
-          <h2 className="contact-title">Contact me</h2>
-          <p className="contact-text">
+          <motion.h2
+            className="contact-title"
+            initial={{ y: -50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+          >
+            Contact me
+          </motion.h2>
+          <motion.p
+            className="contact-text"
+            initial={{ y: -50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+          >
             If you have an application you are interested in developing, a
             feature that you need built or a project that needs coding. I’d love
             to help with it!
-          </p>
-          <form id="contact_form" onSubmit={handleSubmit}>
+          </motion.p>
+          <motion.form
+            id="contact_form"
+            onSubmit={handleSubmit}
+            className="contact-text"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+          >
             <label htmlFor="name">
               <span className="hidden-text">Your Name:</span>
               <input
@@ -120,7 +143,7 @@ const Contact = () => {
                 {errorMsg.msg}
               </span>
             </div>
-          </form>
+          </motion.form>
         </div>
         <Footer />
       </div>
