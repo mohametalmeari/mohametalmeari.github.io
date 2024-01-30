@@ -48,12 +48,12 @@ const Contact = () => {
           email: '',
           message: '',
         });
-        setErrorMsg({ msg: 'Form submitted', color: 'lightgreen' });
+        setErrorMsg({ msg: 'Message sent', color: 'lightgreen' });
       } else {
-        setErrorMsg({ msg: 'Form submission failed', color: 'lightpink' });
+        setErrorMsg({ msg: 'Failed to send message', color: 'lightpink' });
       }
     } catch (error) {
-      setErrorMsg({ msg: 'Form submission failed', color: 'lightpink' });
+      setErrorMsg({ msg: 'Failed to send message', color: 'lightpink' });
     }
   };
 
@@ -71,7 +71,7 @@ const Contact = () => {
             <label htmlFor="name">
               <span className="hidden-text">Your Name:</span>
               <input
-                className="form_field"
+                className="form-field"
                 type="text"
                 id="name"
                 name="name"
@@ -86,7 +86,7 @@ const Contact = () => {
             <label htmlFor="email">
               <span className="hidden-text">Your Email:</span>
               <input
-                className="form_field"
+                className="form-field"
                 type="email"
                 id="email"
                 name="email"
@@ -100,7 +100,7 @@ const Contact = () => {
             <label htmlFor="message">
               <span className="hidden-text">Your Message:</span>
               <textarea
-                className="form_field"
+                className="form-field"
                 name="message"
                 id="message"
                 maxLength="500"
