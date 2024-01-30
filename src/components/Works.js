@@ -24,13 +24,14 @@ const Works = () => {
         .reverse()
         .map((work) => (
           <WorkCard
-            key={work.id}
-            id={work.id}
+            key={work.name}
             name={work.name}
             desktopImg={work.desktopImg}
             info={work.info}
             tags={work.tags}
             shortDescription={work.shortDescription}
+            liveLink={work.liveLink}
+            sourceLink={work.sourceLink}
           />
         ))}
     </main>

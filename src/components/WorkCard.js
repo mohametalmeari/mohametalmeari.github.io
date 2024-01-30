@@ -1,18 +1,12 @@
 import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
 import { useScroll, motion, useTransform } from 'framer-motion';
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { CircleIcon } from '../assets/icons';
-import { openPopupReducer } from '../redux/works/workSlice';
 
 const WorkCard = ({
-  id, name, desktopImg, info, tags, shortDescription,
+  name, desktopImg, info, tags, shortDescription, liveLink, sourceLink,
 }) => {
-  const dispatch = useDispatch();
-  const openPopup = () => {
-    dispatch(openPopupReducer(id));
-  };
-
   const getRandomColor = () => {
     const letters = '0123456789ABCDEF';
     let color = '#';
@@ -65,20 +59,34 @@ const WorkCard = ({
             <span key={tag}>{tag}</span>
           ))}
         </section>
-        <button className="main-btn" type="button" onClick={() => openPopup()}>
-          See project
-        </button>
+        <div className="btn-container">
+          <Link
+            to={liveLink}
+            target="_blank"
+            className={`main-btn ${liveLink || 'disabled'}`}
+          >
+            See live
+          </Link>
+          <Link
+            to={sourceLink}
+            target="_blank"
+            className={`main-btn ${sourceLink || 'disabled'}`}
+          >
+            Code link
+          </Link>
+        </div>
       </div>
     </motion.div>
   );
 };
 
 WorkCard.propTypes = {
-  id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   desktopImg: PropTypes.string.isRequired,
   info: PropTypes.string.isRequired,
   tags: PropTypes.string.isRequired,
   shortDescription: PropTypes.string.isRequired,
+  liveLink: PropTypes.string.isRequired,
+  sourceLink: PropTypes.string.isRequired,
 };
 export default WorkCard;

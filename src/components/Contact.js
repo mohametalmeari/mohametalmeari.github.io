@@ -135,7 +135,7 @@ const Contact = () => {
                 onChange={handleChange}
               />
             </label>
-            <div className="btn_container">
+            <div className="btn-container">
               <button className="form-btn" type="submit">
                 Get in touch
               </button>

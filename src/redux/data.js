@@ -139,7 +139,6 @@ export const skills = [
 
 export const projects = [
   {
-    id: 1,
     name: 'To Do List',
     mobileImg: mobileImage1,
     desktopImg: mobileImage1,
@@ -164,7 +163,6 @@ export const projects = [
     `,
   },
   {
-    id: 2,
     name: 'Awesome Books',
     mobileImg: mobileImage2,
     desktopImg: mobileImage2,
@@ -192,7 +190,6 @@ export const projects = [
     `,
   },
   {
-    id: 3,
     name: 'Catalog of My Things',
     mobileImg: mobileImage3,
     desktopImg: mobileImage3,
@@ -214,7 +211,6 @@ export const projects = [
     `,
   },
   {
-    id: 4,
     name: 'Math Magicians',
     mobileImg: mobileImage4,
     desktopImg: mobileImage4,
@@ -239,7 +235,6 @@ export const projects = [
     `,
   },
   {
-    id: 5,
     name: 'NEBULA NIGHTS',
     mobileImg: mobileImage5,
     desktopImg: mobileImage5,
@@ -260,7 +255,6 @@ export const projects = [
     `,
   },
   {
-    id: 6,
     name: 'Leaderboard',
     mobileImg: mobileImage6,
     desktopImg: mobileImage6,
@@ -281,7 +275,6 @@ export const projects = [
     `,
   },
   {
-    id: 7,
     name: 'YU-GI-OH!',
     mobileImg: mobileImage7,
     desktopImg: mobileImage7,
@@ -307,7 +300,6 @@ export const projects = [
     `,
   },
   {
-    id: 8,
     name: 'Bookstore',
     mobileImg: mobileImage8,
     desktopImg: mobileImage8,
@@ -328,7 +320,6 @@ export const projects = [
     `,
   },
   {
-    id: 9,
     name: 'i-budget',
     mobileImg: mobileImage9,
     desktopImg: mobileImage9,
@@ -351,7 +342,6 @@ export const projects = [
     `,
   },
   {
-    id: 10,
     name: 'Pokémon',
     mobileImg: mobileImage10,
     desktopImg: mobileImage10,
@@ -380,7 +370,6 @@ export const projects = [
     `,
   },
   {
-    id: 11,
     name: 'i-post',
     mobileImg: mobileImage11,
     desktopImg: mobileImage11,
@@ -407,7 +396,6 @@ export const projects = [
     `,
   },
   {
-    id: 12,
     name: 'i-share',
     mobileImg: mobileImage12,
     desktopImg: mobileImage12,
