@@ -10,11 +10,12 @@ const Links = () => (
       href="#contact"
       initial={{ x: 50, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 1.03 }}
       viewport={{ once: true }}
       transition={{
-        type: 'tween',
-        duration: 0.1,
-        delay: 0.3,
+        whileInView: { duration: 0.1, delay: 0.3 },
+        whileHover: { duration: 0.05, delay: 0 },
       }}
     >
       LET&#39;S CONNECT
