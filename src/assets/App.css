@@ -47,7 +47,8 @@
 }
 
 body {
-  background-color: #f7f7f9;
+  background-color: rgb(247, 247, 249);
+  width: 100vw;
 }
 
 :focus {
@@ -55,7 +56,7 @@ body {
 }
 
 ::selection {
-  background-color: #add8e6;
+  background-color: rgb(173, 216, 230);
 }
 
 u {
@@ -67,6 +68,21 @@ code {
   line-height: 36px;
 }
 
+.menu-icon-btn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  outline: none;
+  border: none;
+  padding: 0.3rem;
+  backdrop-filter: blur(8px);
+  z-index: 999;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  aspect-ratio: 1;
+}
 .menu-icon {
   position: relative;
   display: flex;
@@ -145,7 +161,7 @@ code {
 }
 
 .nav-links.open {
-  left: 0;
+  left: 50%;
 }
 
 .nav-item {
@@ -175,6 +191,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.time {
+  color: red;
 }
 
 .header-wrapper {
@@ -373,6 +393,11 @@ textarea {
 
 .form-msg {
   padding: 8px 16px;
+}
+
+.about-container{
+  width: 100vw;
+  overflow: hidden;
 }
 
 .about-container h2 {
@@ -666,7 +691,6 @@ textarea {
     top: 1rem;
     width: fit-content;
     left: 50%;
-    transform: translateX(-50%);
     bottom: auto;
     flex-direction: row;
     background-color: #ebebffd2;
