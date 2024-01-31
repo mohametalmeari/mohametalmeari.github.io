@@ -114,7 +114,7 @@ const particlesOptions = {
   },
   retina_detect: true,
   background: {
-    color: '#fff',
+    color: 'rgba(244,245,247,255)',
     image: '',
     position: '50% 50%',
     repeat: 'no-repeat',
