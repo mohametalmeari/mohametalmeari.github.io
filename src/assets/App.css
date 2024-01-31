@@ -395,7 +395,7 @@ textarea {
   padding: 8px 16px;
 }
 
-.about-container{
+#home, #works, #about, #contact {
   width: 100vw;
   overflow: hidden;
 }
