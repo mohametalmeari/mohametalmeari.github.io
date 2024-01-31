@@ -109,7 +109,7 @@ const About = () => {
             >
               {group.list?.map((skill) => (
                 <li className="skill-card" key={skill.name}>
-                  <img src={skill.icon} alt="icon" />
+                  <img src={skill.icon} alt="icon" width={48} height={48} loading="lazy" title={skill.name} />
                   <span>{skill.name}</span>
                   {skill.tag && <span className="tag">{skill.tag}</span>}
                 </li>

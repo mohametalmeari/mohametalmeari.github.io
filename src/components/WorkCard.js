@@ -37,7 +37,7 @@ const WorkCard = ({
         className="work-img-container"
         style={{ backgroundColor: getRandomColor() }}
       >
-        <img src={projectImage} alt={name} width="400" height="300" />
+        <img src={projectImage} alt={name} width="400" height="300" loading="lazy" title={name} />
       </div>
       <div className="ignore-mobile">
         <h2 className="work-name">{name}</h2>
