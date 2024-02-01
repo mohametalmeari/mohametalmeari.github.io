@@ -47,7 +47,8 @@
 }
 
 body {
-  background-color: #f7f7f9;
+  background-color: rgb(247, 247, 249);
+  width: 100vw;
 }
 
 :focus {
@@ -55,7 +56,7 @@ body {
 }
 
 ::selection {
-  background-color: #add8e6;
+  background-color: rgb(173, 216, 230);
 }
 
 u {
@@ -65,6 +66,27 @@ u {
 code {
   font-size: 24px;
   line-height: 36px;
+}
+
+span {
+  color: inherit;
+  font-size: inherit;
+}
+
+.menu-icon-btn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  outline: none;
+  border: none;
+  padding: 0.3rem;
+  backdrop-filter: blur(8px);
+  z-index: 999;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  aspect-ratio: 1/1;
 }
 
 .menu-icon {
@@ -145,7 +167,7 @@ code {
 }
 
 .nav-links.open {
-  left: 0;
+  left: 50%;
 }
 
 .nav-item {
@@ -175,6 +197,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.time {
+  color: red;
 }
 
 .header-wrapper {
@@ -240,7 +266,6 @@ main {
   border-radius: 8px;
   color: #6070ff;
   font-family: Poppins-Medium, Roboto, sans-serif;
-  margin-bottom: 12px;
 }
 
 .work-info span {
@@ -375,6 +400,14 @@ textarea {
   padding: 8px 16px;
 }
 
+#home,
+#works,
+#about,
+#contact {
+  width: 100vw;
+  overflow: hidden;
+}
+
 .about-container h2 {
   font-family: Poppins-Bold, Roboto, sans-serif;
   font-size: 40px;
@@ -435,11 +468,18 @@ textarea {
   color: #344563;
 }
 
-.work-short,
-.work-long {
+.work-desc {
   font-family: Poppins-Regular, Roboto, sans-serif;
   font-size: 15px;
   line-height: 24px;
+  margin-bottom: 12px;
+}
+
+.work-note {
+  font-family: Poppins-Regular, Roboto, sans-serif;
+  color: lightcoral;
+  font-size: 10px;
+  line-height: 12px;
   margin-bottom: 12px;
 }
 
@@ -447,6 +487,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  margin-bottom: 12px;
 }
 
 .main-btn,
@@ -666,7 +707,6 @@ textarea {
     top: 1rem;
     width: fit-content;
     left: 50%;
-    transform: translateX(-50%);
     bottom: auto;
     flex-direction: row;
     background-color: #ebebffd2;
@@ -860,23 +900,13 @@ textarea {
     padding: 12px 0;
   }
 
-  .work-short,
-  .work-long {
-    margin-bottom: 24px;
+  .work-desc {
     flex-grow: 1;
-  }
-
-  .work-tags span {
-    margin-bottom: 24px;
   }
 
   .details-body {
     display: flex;
     gap: 24px;
-  }
-
-  .work-long {
-    flex: 2;
   }
 
   .details-tags-btns {

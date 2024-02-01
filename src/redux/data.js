@@ -160,6 +160,7 @@ export const projects = [
     without having to keep everything in your head. One of the benefits of using a To-Do list 
     is that it can help you to stay focused.
     `,
+    note: 'Note: Uses local storage',
   },
   {
     name: 'Awesome Books',
@@ -344,6 +345,7 @@ export const projects = [
     connections and conversations that resonate within the i-Post community. Join 
     us in shaping this dynamic space!
     `,
+    note: 'Note: Hosted on a free server, it takes a couple of minutes to load for the first time.',
   },
   {
     name: 'i-share',
@@ -362,5 +364,6 @@ export const projects = [
     that unfold from every corner of the globe. Join us in creating a vibrant 
     community where every image tells a unique story!
     `,
+    note: 'Note: API is Hosted on a free server, it takes a couple of minutes to fetch for the first time.',
   },
 ];

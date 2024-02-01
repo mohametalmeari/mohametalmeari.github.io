@@ -54,6 +54,7 @@ const About = () => {
         <Links />
         <motion.a
           className="main-btn"
+          style={{ flex: 0 }}
           target="_blank"
           rel="noreferrer"
           href="http://resume.mo-dev.site/"

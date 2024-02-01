@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { CircleIcon } from '../assets/icons';
 
 const WorkCard = ({
-  name, projectImage, info, tags, description, liveLink, sourceLink,
+  name, projectImage, info, tags, description, liveLink, sourceLink, note,
 }) => {
   const getRandomColor = () => {
     const letters = '0123456789ABCDEF';
@@ -50,10 +50,16 @@ const WorkCard = ({
             </>
           ))}
         </section>
-        <p className="work-short">
+        <p className="work-desc">
           {description.slice(0, 150)}
-          {description.length > 150 && <span>...</span>}
+          {description.length > 150 && <span title={description}>...</span>}
         </p>
+        {note && (
+        <p className="work-note" title={note}>
+          {note.slice(0, 50)}
+          {note.length > 50 && <span>...</span>}
+        </p>
+        )}
         <section className="work-tags">
           {tags.map((tag) => (
             <span key={tag}>{tag}</span>
@@ -86,6 +92,7 @@ WorkCard.propTypes = {
   info: PropTypes.string.isRequired,
   tags: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  note: PropTypes.string.isRequired,
   liveLink: PropTypes.string.isRequired,
   sourceLink: PropTypes.string.isRequired,
 };

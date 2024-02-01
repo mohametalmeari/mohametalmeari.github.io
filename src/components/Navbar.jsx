@@ -62,35 +62,14 @@ const Navbar = () => {
   };
 
   return (
-    <motion.nav
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{
-        type: 'tween',
-        duration: 0.2,
-        delay: 0,
-      }}
-    >
+    <nav>
       <button
+        className="menu-icon-btn"
         style={{
-          position: 'fixed',
-          top: 0,
-          right: 0,
-          outline: 'none',
-          border: 'none',
-          margin: '1rem',
-          padding: '0.3rem',
-          backdropFilter: 'blur(8px)',
           backgroundColor: navbarOpen
             ? 'transparent'
             : 'rgba(235, 235, 255, 0.8)',
           boxShadow: navbarOpen || '2px 2px 4px -1px rgb(223, 225, 230)',
-          zIndex: 999,
-          borderRadius: '50%',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          aspectRatio: '1/1',
         }}
         onClick={() => toggleMenu()}
         type="button"
@@ -100,7 +79,14 @@ const Navbar = () => {
         </div>
       </button>
 
-      <ul
+      <motion.ul
+        initial={{ y: -100, x: '-50%', opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          type: 'tween',
+          duration: 0.2,
+          delay: 0,
+        }}
         className={`nav-links${navbarOpen ? ' open' : ''}`}
         style={{ padding: `${navPadding}px` }}
       >
@@ -167,8 +153,8 @@ const Navbar = () => {
             </a>
           </li>
         </div>
-      </ul>
-    </motion.nav>
+      </motion.ul>
+    </nav>
   );
 };
 export default Navbar;
