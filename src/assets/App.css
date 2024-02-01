@@ -68,6 +68,11 @@ code {
   line-height: 36px;
 }
 
+span {
+  color: inherit;
+  font-size: inherit;
+}
+
 .menu-icon-btn {
   position: fixed;
   top: 1rem;
@@ -260,7 +265,6 @@ main {
   border-radius: 8px;
   color: #6070ff;
   font-family: Poppins-Medium, Roboto, sans-serif;
-  margin-bottom: 12px;
 }
 
 .work-info span {
@@ -460,11 +464,18 @@ textarea {
   color: #344563;
 }
 
-.work-short,
-.work-long {
+.work-desc {
   font-family: Poppins-Regular, Roboto, sans-serif;
   font-size: 15px;
   line-height: 24px;
+  margin-bottom: 12px;
+}
+
+.work-note {
+  font-family: Poppins-Regular, Roboto, sans-serif;
+  color: lightcoral;
+  font-size: 10px;
+  line-height: 12px;
   margin-bottom: 12px;
 }
 
@@ -472,6 +483,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  margin-bottom: 12px;
 }
 
 .main-btn,
@@ -884,23 +896,13 @@ textarea {
     padding: 12px 0;
   }
 
-  .work-short,
-  .work-long {
-    margin-bottom: 24px;
+  .work-desc {
     flex-grow: 1;
-  }
-
-  .work-tags span {
-    margin-bottom: 24px;
   }
 
   .details-body {
     display: flex;
     gap: 24px;
-  }
-
-  .work-long {
-    flex: 2;
   }
 
   .details-tags-btns {

@@ -30,6 +30,7 @@ const Works = () => {
             info={work.info}
             tags={work.tags}
             description={work.description}
+            note={work.note}
             liveLink={work.liveLink}
             sourceLink={work.sourceLink}
           />
