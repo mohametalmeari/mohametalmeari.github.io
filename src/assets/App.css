@@ -86,8 +86,9 @@ span {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
 }
+
 .menu-icon {
   position: relative;
   display: flex;
@@ -399,7 +400,10 @@ textarea {
   padding: 8px 16px;
 }
 
-#home, #works, #about, #contact {
+#home,
+#works,
+#about,
+#contact {
   width: 100vw;
   overflow: hidden;
 }
