@@ -695,6 +695,16 @@ textarea {
   display: none;
 }
 
+#bmc-wbtn img {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+#bmc-wbtn {
+  width: 40px !important;
+  height: 40px !important;
+}
+
 @media screen and (min-width: 768px) {
   .menu-icon {
     display: none;
@@ -941,6 +951,21 @@ textarea {
   .menu-nav > li:active {
     background-color: rgba(0, 0, 255, 0.07);
     border-radius: 8px;
+  }
+
+  #bmc-wbtn img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  #bmc-wbtn svg {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  #bmc-wbtn {
+    width: 50px !important;
+    height: 50px !important;
   }
 }
 
