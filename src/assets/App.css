@@ -48,7 +48,6 @@
 
 body {
   background-color: rgb(247, 247, 249);
-  width: 100vw;
 }
 
 :focus {
@@ -404,7 +403,6 @@ textarea {
 #works,
 #about,
 #contact {
-  width: 100vw;
   overflow: hidden;
 }
 
