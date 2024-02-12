@@ -265,6 +265,7 @@ main {
   border-radius: 8px;
   color: #6070ff;
   font-family: Poppins-Medium, Roboto, sans-serif;
+  font-size: 15px;
 }
 
 .work-info span {
@@ -459,7 +460,6 @@ textarea {
   gap: 12px;
   padding: 8px 0;
   color: blue;
-  margin-bottom: 12px;
 }
 
 .work-info :first-child {
@@ -469,7 +469,7 @@ textarea {
 .work-desc {
   font-family: Poppins-Regular, Roboto, sans-serif;
   font-size: 15px;
-  line-height: 24px;
+  line-height: 22px;
   margin-bottom: 12px;
 }
 
@@ -493,7 +493,7 @@ textarea {
   align-self: flex-start;
   background-color: transparent;
   padding: 12px;
-  margin: 12px 0;
+  margin: 4px 0;
   border-radius: 8px;
   font-family: Poppins-Medium, Roboto, sans-serif;
   transition: all 0.2s ease-in-out;
@@ -890,12 +890,11 @@ textarea {
   .ignore-mobile {
     display: flex;
     flex-direction: column;
-    padding: 24px;
+    padding: 20px;
   }
 
   .work-info {
-    margin-bottom: 12px;
-    padding: 12px 0;
+    padding: 10px 0;
   }
 
   .work-desc {

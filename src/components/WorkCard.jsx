@@ -51,8 +51,8 @@ const WorkCard = ({
           ))}
         </section>
         <p className="work-desc">
-          {description.slice(0, 150)}
-          {description.length > 150 && <span title={description}>...</span>}
+          {description.slice(0, 350)}
+          {description.length > 350 && <span title={description}>...</span>}
         </p>
         {note && (
         <p className="work-note" title={note}>

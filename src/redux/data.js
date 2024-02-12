@@ -33,6 +33,8 @@ import rspecIcon from '../assets/images/skills/rspecIcon.png';
 import teamworkIcon from '../assets/images/skills/teamworkIcon.png';
 import mentoringIcon from '../assets/images/skills/mentoringIcon.png';
 import remotePairIcon from '../assets/images/skills/remotePairIcon.png';
+import criticalThinkingIcon from '../assets/images/skills/criticalThinkingIcon.png';
+import problemSolvingIcon from '../assets/images/skills/problemSolvingIcon.png';
 
 export const bio = "I'm a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.";
 
@@ -133,6 +135,14 @@ export const skills = [
         name: 'Remote Pair-Programming',
         icon: remotePairIcon,
       },
+      {
+        name: 'Critical Thinking',
+        icon: criticalThinkingIcon,
+      },
+      {
+        name: 'Problem Solving',
+        icon: problemSolvingIcon,
+      },
     ],
   },
 ];
@@ -145,20 +155,10 @@ export const projects = [
     tags: ['HTML', 'CSS', 'JavaScript'],
     liveLink: 'https://mohametalmeari.github.io/To-Do-List-Project/dist/',
     sourceLink: 'https://github.com/mohametalmeari/To-Do-List-Project/',
-    shortDescription: `
-    To Do List is a tool that helps to organize your day. It simply lists the things that you 
-    need to do and allows you to mark them as complete.
-    `,
     description: `
-    Having a To-Do list is a great way to stay organized and manage your tasks efficiently. 
-    With so many things to do and so little time, it's easy to feel overwhelmed and unsure of 
-    where to start. That's where a To-Do list comes in handy! It's a simple tool that helps 
-    you keep track of all the tasks you need to complete in a given day, week, or month. A To-Do 
-    list can be as basic or as detailed as you like. At its core, it's a list of tasks or activities 
-    that you need to complete. 
-    By having all your tasks in one place, you can quickly and easily see what needs to be done, 
-    without having to keep everything in your head. One of the benefits of using a To-Do list 
-    is that it can help you to stay focused.
+    Start your day with a clear plan, stay organized, and get things done. This To-Do list application 
+    is designed to help you manage your tasks and stay on top of your daily responsibilities. Users can 
+    add, remove, and mark tasks as complete, ensuring that they never miss a beat.
     `,
     note: 'Note: Uses local storage',
   },
@@ -169,23 +169,10 @@ export const projects = [
     tags: ['HTML', 'CSS', 'JavaScript'],
     liveLink: 'https://mohametalmeari.github.io/Awesome-Books-ES6/',
     sourceLink: 'https://github.com/mohametalmeari/Awesome-Books-ES6',
-    shortDescription: `
-    A Books Library with local storage simplifies tracking favorite books. Access your collection 
-    across devices without the need for an internet connection, ensuring security and control 
-    over your private data.
-    `,
     description: `
-    A Books Library that uses local storage is a convenient and simple way to keep track of your 
-    favorite books. With so many books available in the world today, it can be difficult to 
-    remember which ones you've read and which ones you want to read. This is where a Books Library 
-    comes in handy. By using local storage to save your favorite books, you can easily access your 
-    collection from any device. Whether you're using your laptop, phone, or tablet, you can quickly 
-    view your collection and find the book you're looking for. Plus, because the data is stored 
-    locally, you don't need an internet connection to access your library. Another benefit of using 
-    local storage for your Books Library is that it's secure and private. You don't need to worry 
-    about your data being shared or compromised, as it's all stored locally on your device. This 
-    also means that you have full control over your collection, and you can easily add or remove 
-    books as you please.
+    Organizing your book collection has never been easier! Designed to help book lovers keep track of 
+    their favorite books. Users can easily add, remove, and view books in their collection, ensuring 
+    that they never lose track of their reading list.
     `,
   },
   {
@@ -195,12 +182,10 @@ export const projects = [
     tags: ['Ruby', 'PostgreSQL'],
     sourceLink: 'https://github.com/mohametalmeari/my-things',
     description: `
-    The "Catalog of My Things" is a console app designed to meticulously document owned items, 
-    encompassing books, music albums, and games. The application employs a Unified Modeling 
-    Language (UML) class diagram to represent its underlying structure. Data is efficiently 
-    stored using JSON files, and a parallel database is created with tables mirroring the program's 
-    class organization. This comprehensive approach ensures seamless organization and retrieval 
-    of information, making the catalog a robust tool for managing and tracking personal possessions.
+    Console app designed to meticulously document owned items, including books, music albums, and games. 
+    The application uses a Unified Modeling Language (UML) class diagram to represent its underlying 
+    structure. Data is stored efficiently using both JSON files and PostgreSQL databases.
+
     `,
   },
   {
@@ -211,29 +196,22 @@ export const projects = [
     liveLink: 'https://almeari-math-magicians.onrender.com',
     sourceLink: 'https://github.com/mohametalmeari/math-magicians',
     description: `
-    Discover a user-friendly haven for basic mathematical operations with this website's simple calculator. 
-    It seamlessly executes fundamental math tasks such as addition, subtraction, multiplication, division, 
-    and modulo, catering to your numerical needs effortlessly. Beyond being a handy calculator, the site 
-    offers an extra dose of inspiration. Explore a dedicated page filled with cool and random quotes, designed 
-    to uplift and motivate. Whether you're tackling mathematical challenges or simply seeking a positive boost, 
-    this website has something for everyone. Dive into the world of numbers with the convenience of a versatile 
-    calculator, and enrich your browsing experience with a collection of quotes that add a touch of optimism 
-    to your day. 
+    Dive into the world of numbers with and enrich your browsing experience with a collection of quotes 
+    that add a touch of optimism to your day. Users can do basic mathematical operations with a simple 
+    calculator and read a random quote to inspire and motivate them.
     `,
   },
   {
-    name: 'NEBULA NIGHTS',
+    name: 'Nebula Nights',
     projectImage: projectImage5,
     info: ['Microverse', 'Front End Dev', '2023'],
     tags: ['HTML', 'CSS', 'JavaScript'],
     liveLink: 'https://mohametalmeari.github.io/CapstoneOne',
     sourceLink: 'https://github.com/mohametalmeari/CapstoneOne',
     description: `
-    The Interstellar Music Experience website is an innovative and unique concert that combines music, 
-    art, and technology to create an immersive journey through space. It features curated music, stunning 
-    visuals, and interactive elements that allow visitors to explore the depths of the cosmos. It's a 
-    celebration of the intersection of art, music, and technology and promises to be a truly unforgettable 
-    experience for space enthusiasts and music lovers alike.
+    Prepare for a cosmic journey with an innovative and unique concert that combines music, art, and 
+    technology to create an immersive space experience! It features curated music, stunning visuals, 
+    and interactive elements that allow visitors to explore the depths of the cosmos.
     `,
   },
   {
@@ -244,31 +222,22 @@ export const projects = [
     liveLink: 'https://mohametalmeari.github.io/Leaderboard/dist',
     sourceLink: 'https://github.com/mohametalmeari/Leaderboard',
     description: `
-    The leaderboard is a great way to track your progress and see how you stack up against other players. 
-    It displays scores submitted by different players, and it also allows you to submit your score. To 
-    submit your score, simply enter your name and the score you achieved. Your score will then be added 
-    to the leaderboard for all to see. The leaderboard is a great way to stay motivated and competitive. 
-    It's also a great way to see how you're improving over time. So if you're looking for a way to track 
-    your progress and stay motivated, be sure to check out the leaderboard.
+    Show off your skills and compete with other players with this interactive leaderboard, designed to 
+    track your progress and keep you motivated. Users can submit their scores and see how they stack up 
+    against others, fostering a sense of friendly competition.
     `,
   },
   {
-    name: 'YU-GI-OH!',
+    name: 'Yu-Gi-Oh!',
     projectImage: projectImage7,
     info: ['Microverse', 'Front End Dev', '2023'],
     tags: ['React', 'Redux', 'CSS'],
     liveLink: 'https://mohametalmeari.github.io/yugioh-react-capstone',
     sourceLink: 'https://github.com/mohametalmeari/yugioh-react-capstone',
     description: `
-    Yu-Gi-Oh! enthusiasts rejoice, as there's a captivating website dedicated to unraveling the mystique of 
-    the phenomenal playing cards featured in the iconic Yu-Gi-Oh! anime. This cool platform serves as a haven 
-    for fans, offering a comprehensive repository of information about these fantastic cards. It's not just a 
-    website; it's an immersive space where enthusiasts can delve into the intricacies of their favorite 
-    Yu-Gi-Oh! cards. Whether you're a seasoned duelist or a curious newcomer, this online sanctuary is 
-    tailor-made for you. Immerse yourself in the world of Yu-Gi-Oh! as you explore, learn, and uncover 
-    the secrets behind these captivating cards. Unleash the power of your passion for Yu-Gi-Oh! as you 
-    navigate through a treasure trove of knowledge on this website, designed to cater to the curiosity 
-    and excitement of every fan. Dive into the realm of Yu-Gi-Oh! cards and let the journey begin!
+    Embark on an enthralling journey into the world of Yu-Gi-Oh! cards with this captivating website, 
+    designed to celebrate the iconic playing cards featured in the beloved anime. Users can explore a
+    vast collection of cards, uncover their secrets, and learn about their unique abilities.
     `,
   },
   {
@@ -279,29 +248,22 @@ export const projects = [
     liveLink: 'https://mohametalmeari.github.io/bookstore/',
     sourceLink: 'https://github.com/mohametalmeari/bookstore',
     description: `
-    Bookstore is a helpful website for book lovers. It lets you save and organize your favorite books. 
-    You can also keep track of how far you've read in each book. The site is easy to use, making it 
-    simple to manage your book collection. Whether you read a lot or just occasionally, Bookstore 
-    gives you a convenient way to enjoy and keep tabs on your books. Join today for a user-friendly 
-    experience that makes your reading journey more enjoyable and organized.
+    Book lover seeking a convenient way to manage a book collection and keep track of reading progress! 
+    Manage books with ease and precision. Users can effortlessly save and organize their favorite books 
+    and keep track of how far they've read in each book.
     `,
   },
   {
-    name: 'i-budget',
+    name: 'i-Budget',
     projectImage: projectImage9,
     info: ['Microverse', 'Full Stack Dev', '2023'],
     tags: ['Ruby on Rails', 'CSS', 'PostgreSQL'],
     liveLink: 'https://i-budget.onrender.com',
     sourceLink: 'https://github.com/mohametalmeari/i-budget',
     description: `
-    i-budget is a user-friendly mobile web application dedicated to enhancing your budget management 
-    experience. This innovative tool empowers users to take control of their finances effortlessly. 
-    Getting started with i-budget is a breeze. Simply register and log in to access a wealth of 
-    financial management features. Add transactions to customizable categories tailored to your 
-    specific needs, providing you with a detailed overview of your spending habits. What sets i-budget 
-    apart is its unwavering commitment to security. We've implemented robust authentication measures 
-    to safeguard your financial data. Rest assured that your information is stored securely in a 
-    PostgreSQL database, ensuring the utmost privacy.
+    Manage your finances with ease and precision. This innovative platform is designed to help you
+    take control of your budget and make informed financial decisions. Users can effortlessly track
+    their spending, set budgets, and monitor their financial health.
     `,
   },
   {
@@ -312,18 +274,9 @@ export const projects = [
     liveLink: 'https://mohametalmeari.github.io/JavascriptCapstone/',
     sourceLink: 'https://github.com/mohametalmeari/JavascriptCapstone',
     description: `
-    The Pokémon website serves as a vibrant hub, inviting enthusiasts to immerse 
-    themselves in a vast collection of Pokés. Boasting engaging discussions and 
-    providing timely updates on the latest releases, it stands as the go-to platform 
-    for staying intricately connected to the dynamic and ever-evolving Pokémon 
-    community. This digital haven not only showcases an extensive array of Pokémon, 
-    but also fosters a sense of camaraderie among fans who share a common passion for 
-    these iconic creatures. Whether you're a seasoned Pokémon trainer or a newcomer 
-    eager to delve into the Pokémon universe, this website offers a comprehensive 
-    and interactive experience. From insightful discussions about gameplay strategies 
-    to the excitement surrounding new additions to the Pokémon world, the website acts 
-    as an indispensable resource for enthusiasts seeking to stay informed and engaged 
-    within the vibrant realm of Pokémon.
+    Pokémon fan seeking a vibrant hub to connect with fellow enthusiasts and immerse in a vast collection 
+    of Pokés. Users can participate in discussions by commenting on Pokémon cards, liking their favorites, 
+    and staying updated on the latest releases.
     `,
   },
   {
@@ -334,35 +287,23 @@ export const projects = [
     liveLink: 'https://i-post-almeari.onrender.com/',
     sourceLink: 'https://github.com/mohametalmeari/i-post',
     description: `
-    i-Post stands as a dynamic and vibrant platform, offering an interactive space 
-    for individuals to not only share their thoughts but also delve into a world of 
-    diverse content. This dynamic hub goes beyond being just a social space—it's a 
-    thriving community where every post contributes to a lively tapestry of ideas. 
-    By participating in i-Post, you become an integral part of a collective voice, 
-    connecting with like-minded individuals and fostering engaging discussions. The 
-    platform's essence lies in the power of shared experiences, providing an enriching 
-    environment where your posts not only express your thoughts but also spark 
-    connections and conversations that resonate within the i-Post community. Join 
-    us in shaping this dynamic space!
+    Unleash your creativity by sharing your posts and discovering captivating content from others, it's 
+    a dynamic platform where your ideas come to life. Users can create posts on their interesting topics, 
+    read posts from others, and interact with the community through likes and comments.
     `,
     note: 'Note: Hosted on a free server, it takes a couple of minutes to load for the first time.',
   },
   {
-    name: 'i-share',
+    name: 'i-Share',
     projectImage: projectImage12,
     info: ['Personal Project', 'Full Stack Dev', '2023'],
     tags: ['React', 'Redux', 'CSS', 'Rails API', 'PostgreSQL'],
     liveLink: 'https://i-share-almeari.onrender.com/',
     sourceLink: 'https://github.com/mohametalmeari/i-share-frontend',
     description: `
-    i-Share is an amazing platform designed for sharing captivating photos online. 
-    Here, you have the opportunity to effortlessly share your favorite pictures, 
-    express your admiration by giving stars, and engage in conversations with fellow 
-    photography enthusiasts. It's a delightful and interactive space where you 
-    can connect with people who share a passion for photos. Immerse yourself in 
-    the experience, share your cherished moments, and revel in the visual narratives 
-    that unfold from every corner of the globe. Join us in creating a vibrant 
-    community where every image tells a unique story!
+    Born from a passion for photography and storytelling, it's a vibrant community platform where photo 
+    enthusiasts worldwide connect over shared interests. Users can upload their most captivating photos, 
+    discover stories from across the globe, and engage in lively discussions.
     `,
     note: 'Note: API is Hosted on a free server, it takes a couple of minutes to fetch for the first time.',
   },
