@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useDispatch } from 'react-redux';
-import { HiDownload } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import { RightArrowIcon } from '../assets/icons';
 import { setActiveSection } from '../redux/navbar/navSlice';
@@ -52,24 +51,6 @@ const About = () => {
           <Bio />
         </motion.p>
         <Links />
-        <motion.a
-          className="main-btn"
-          style={{ flex: 0 }}
-          target="_blank"
-          rel="noreferrer"
-          href="http://resume.mo-dev.site/"
-          download
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{
-            duration: 0.01,
-            delay: 0.55,
-          }}
-        >
-          Get my resume
-          <HiDownload className="download-icon" />
-        </motion.a>
       </div>
 
       <ul className="skills-container">
@@ -110,7 +91,14 @@ const About = () => {
             >
               {group.list?.map((skill) => (
                 <li className="skill-card" key={skill.name}>
-                  <img src={skill.icon} alt="icon" width={48} height={48} loading="lazy" title={skill.name} />
+                  <img
+                    src={skill.icon}
+                    alt="icon"
+                    width={48}
+                    height={48}
+                    loading="lazy"
+                    title={skill.name}
+                  />
                   <span>{skill.name}</span>
                   {skill.tag && <span className="tag">{skill.tag}</span>}
                 </li>
