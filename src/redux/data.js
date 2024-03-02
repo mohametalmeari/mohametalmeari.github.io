@@ -10,6 +10,7 @@ import projectImage9 from '../assets/images/works/9.png';
 import projectImage10 from '../assets/images/works/10.png';
 import projectImage11 from '../assets/images/works/11.png';
 import projectImage12 from '../assets/images/works/12.png';
+import projectImage13 from '../assets/images/works/13.png';
 
 import jsIcon from '../assets/images/skills/jsIcon.png';
 import tsIcon from '../assets/images/skills/tsIcon.png';
@@ -306,5 +307,17 @@ export const projects = [
     discover stories from across the globe, and engage in lively discussions.
     `,
     note: 'Note: API is Hosted on a free server, it takes a couple of minutes to fetch for the first time.',
+  },
+  {
+    name: 'FastPackage',
+    projectImage: projectImage13,
+    info: ['Personal Project', 'Full Stack Dev', '2024'],
+    tags: ['React', 'NextJS', 'TailwindCSS', 'Prisma', 'Stripe', 'Clerk Auth'],
+    liveLink: 'https://fastpackage.vercel.app/',
+    sourceLink: 'https://github.com/mohametalmeari/nextjs-ecommerce-store',
+    description: `
+    Boost your business with a dynamic e-commerce platform that provides a customer-centric store and a powerful 
+    management dashboard. Visitors can explore your site seamlessly, and enjoy a user-friendly experience.
+    `,
   },
 ];
