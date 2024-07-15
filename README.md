@@ -5,7 +5,7 @@
   <img src="./src/assets/images/readme-logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Portfolio README</b></h3>
+  <h3>README</h3>
 
 </div>
 
@@ -19,25 +19,22 @@
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
   - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
-- [🙏 Acknowlednpments](#acknowlednpments)
-- [❓ FAQ (OPTIONAL)](#faq)
+- [🙏 Acknowledgments](#acknowledgments)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Mo.Almeari - Portfolio <a name="about-project"></a>
+# 📖 Portfolio <a name="about-project"></a>
 
-**Mo.Almeari - Portfolio** showcases my web development skills and experience with visually appealing examples of my best projects. It gives potential clients/employers an insight into what I can bring to their projects.
+**Portfolio** showcases my web development skills and experience with visually appealing examples of my best projects. It gives potential clients/employers an insight into what I can bring to their projects.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -69,10 +66,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Open the link bellow:
-
- - [Live Demo Link](https://mo-dev.site)
- - [Outline Video](https://youtu.be/D_TjwStJm5Q)
+- [Live Demo Link](https://mo-dev.site)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,6 +75,10 @@
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need: Node.js
 
 ### Setup
 
@@ -100,14 +98,6 @@ Install this project with:
   npm install
 ```
 
-### Prerequisites
-
-In order to run this project you need:
-
-```sh
-  npm run build
-```
-
 ### Usage
 
 To run the project, execute the following command:
@@ -124,9 +114,8 @@ To run the project, execute the following command:
 
 👤 **Mohamad**
 
-- GitHub: [@githubhandle](https://github.com/mohametalmeari)
-- Twitter: [@twitterhandle](https://twitter.com/MohametAlmeari)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohamet-almeari)
+- GitHub: [@mohametalmeari](https://github.com/mohametalmeari)
+- LinkedIn: [@mohamet-almeari](https://www.linkedin.com/in/mohamet-almeari)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,8 +124,6 @@ To run the project, execute the following command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Animated Logo**
-- [ ] **Animated Buttons**
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -154,7 +141,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-We invite you to share this project with others and provide a favorable review if you find it to be useful.
+I invite you to share this project with others and provide a favorable review if you find it to be useful.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -162,19 +149,7 @@ We invite you to share this project with others and provide a favorable review i
 
 ## 🙏 Acknowledgments <a name="acknowledgments"></a>
 
-
-I would like to thank Microverse team for helping me building to learn web development.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-  
-- **How to build Portfolio?**
-
-  - Follow the steps in this link https://github.com/microverseinc/curriculum-html-css/blob/main/portfolio/1_setup.md
+I would like to thank the Microverse team for their invaluable help in teaching me web development and coding.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -183,6 +158,5 @@ I would like to thank Microverse team for helping me building to learn web devel
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./MIT.md) licensed.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
