@@ -32,6 +32,14 @@ import remotePairIcon from '../assets/images/skills/remotePairIcon.png';
 import criticalThinkingIcon from '../assets/images/skills/criticalThinkingIcon.png';
 import problemSolvingIcon from '../assets/images/skills/problemSolvingIcon.png';
 
+import dockerIcon from '../assets/images/skills/dockerIcon.png';
+import mysqlIcon from '../assets/images/skills/mysqlIcon.png';
+import mongoIcon from '../assets/images/skills/mongodbIcon.png';
+import firebaseIcon from '../assets/images/skills/firebaseIcon.png';
+import nodeIcon from '../assets/images/skills/nodeIcon.png';
+import bootstrapIcon from '../assets/images/skills/bootstrapIcon.png';
+import nestIcon from '../assets/images/skills/nestIcon.png';
+
 export const bio = "I'm a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.";
 
 export const skills = [
@@ -72,25 +80,64 @@ export const skills = [
         icon: reactIcon,
       },
       {
-        name: 'Next.js',
+        name: 'NextJS',
         icon: nextIcon,
       },
       {
-        name: 'Tailwind CSS',
-        icon: tailwindIcon,
+        name: 'ExpressJS',
+        icon: nodeIcon,
       },
+      {
+        name: 'Ruby on Rails',
+        icon: rorIcon,
+      },
+      {
+        name: 'NestJS',
+        icon: nestIcon,
+        tag: 'learning',
+      },
+    ],
+  },
+  {
+    title: 'Libraries',
+    list: [
       {
         name: 'Redux',
         icon: reduxIcon,
+      },
+      {
+        name: 'Tailwind',
+        icon: tailwindIcon,
+      },
+      {
+        name: 'Bootstrap',
+        icon: bootstrapIcon,
       },
       {
         name: 'ThreeJS',
         icon: threeIcon,
         tag: 'learning',
       },
+    ],
+  },
+  {
+    title: 'Database',
+    list: [
       {
-        name: 'Ruby on Rails',
-        icon: rorIcon,
+        name: 'PostgreSQL',
+        icon: pgIcon,
+      },
+      {
+        name: 'MySQL',
+        icon: mysqlIcon,
+      },
+      {
+        name: 'MongoDB',
+        icon: mongoIcon,
+      },
+      {
+        name: 'Firebase',
+        icon: firebaseIcon,
       },
     ],
   },
@@ -102,16 +149,8 @@ export const skills = [
         icon: gitIcon,
       },
       {
-        name: 'Jest',
-        icon: jestIcon,
-      },
-      {
-        name: 'RSpec',
-        icon: rspecIcon,
-      },
-      {
-        name: 'PostgreSQL',
-        icon: pgIcon,
+        name: 'Docker',
+        icon: dockerIcon,
       },
       {
         name: 'Postman',
@@ -120,6 +159,14 @@ export const skills = [
       {
         name: 'Prisma',
         icon: prismaIcon,
+      },
+      {
+        name: 'Jest',
+        icon: jestIcon,
+      },
+      {
+        name: 'RSpec',
+        icon: rspecIcon,
       },
     ],
   },
@@ -195,7 +242,8 @@ export const projects = [
     projectImage: projectImage4,
     info: ['SaaS Project', 'VSCode Extension', '2024'],
     tags: ['JavaScript'],
-    liveLink: 'https://marketplace.visualstudio.com/items?itemName=WebCrafter.auto-type-code',
+    liveLink:
+      'https://marketplace.visualstudio.com/items?itemName=WebCrafter.auto-type-code',
     sourceLink: 'https://github.com/web-crafters-lab/auto-type',
     description: `
       VSCode extension that allows users to automate the typing of predefined code snippets. This extension reads from 
@@ -220,7 +268,15 @@ export const projects = [
     name: 'Genius AI',
     projectImage: projectImage6,
     info: ['SaaS Project', 'Full Stack Dev', '2024'],
-    tags: ['NextJS', 'TailwindCSS', 'Prisma', 'Stripe', 'Clerk Auth', 'GoogleAI API', 'Replicate API'],
+    tags: [
+      'NextJS',
+      'TailwindCSS',
+      'Prisma',
+      'Stripe',
+      'Clerk Auth',
+      'GoogleAI API',
+      'Replicate API',
+    ],
     liveLink: 'https://genius-5ai-tools.vercel.app',
     sourceLink: 'https://github.com/mohametalmeari/ai-saas',
     description: `
