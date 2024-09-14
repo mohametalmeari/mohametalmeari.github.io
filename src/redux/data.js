@@ -39,6 +39,8 @@ import firebaseIcon from '../assets/images/skills/firebaseIcon.png';
 import nodeIcon from '../assets/images/skills/nodeIcon.png';
 import bootstrapIcon from '../assets/images/skills/bootstrapIcon.png';
 import nestIcon from '../assets/images/skills/nestIcon.png';
+import clerkIcon from '../assets/images/skills/clerkIcon.png';
+import aiIcon from '../assets/images/skills/googleAIIcon.png';
 
 export const bio = "I'm a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.";
 
@@ -73,7 +75,7 @@ export const skills = [
     ],
   },
   {
-    title: 'Frameworks',
+    title: 'Frameworks & Libraries',
     list: [
       {
         name: 'React',
@@ -96,11 +98,6 @@ export const skills = [
         icon: nestIcon,
         tag: 'learning',
       },
-    ],
-  },
-  {
-    title: 'Libraries',
-    list: [
       {
         name: 'Redux',
         icon: reduxIcon,
@@ -121,28 +118,7 @@ export const skills = [
     ],
   },
   {
-    title: 'Database',
-    list: [
-      {
-        name: 'PostgreSQL',
-        icon: pgIcon,
-      },
-      {
-        name: 'MySQL',
-        icon: mysqlIcon,
-      },
-      {
-        name: 'MongoDB',
-        icon: mongoIcon,
-      },
-      {
-        name: 'Firebase',
-        icon: firebaseIcon,
-      },
-    ],
-  },
-  {
-    title: 'Tools',
+    title: 'Tools & Databases',
     list: [
       {
         name: 'Git',
@@ -167,6 +143,30 @@ export const skills = [
       {
         name: 'RSpec',
         icon: rspecIcon,
+      },
+      {
+        name: 'Clerk Auth',
+        icon: clerkIcon,
+      },
+      {
+        name: 'GoogleAI API',
+        icon: aiIcon,
+      },
+      {
+        name: 'MySQL',
+        icon: mysqlIcon,
+      },
+      {
+        name: 'PostgreSQL',
+        icon: pgIcon,
+      },
+      {
+        name: 'MongoDB',
+        icon: mongoIcon,
+      },
+      {
+        name: 'Firebase',
+        icon: firebaseIcon,
       },
     ],
   },
